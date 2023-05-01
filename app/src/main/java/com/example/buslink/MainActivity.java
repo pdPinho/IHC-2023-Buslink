@@ -2,6 +2,7 @@ package com.example.buslink;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -27,5 +28,23 @@ public class MainActivity extends AppCompatActivity {
                 origin.showDropDown();
             }
         });*/
+    }
+
+    // button swap handler (origin - destination)
+    public void swap_locations(View view) {
+        AutoCompleteTextView origin = (AutoCompleteTextView)findViewById(R.id.origin);
+        AutoCompleteTextView destination = (AutoCompleteTextView)findViewById(R.id.destination);
+
+        String originText = origin.getText().toString();
+        String destinationText = destination.getText().toString();
+
+        origin.setText(destinationText);
+        destination.setText(originText);
+    }
+
+    // button login handler
+    public void login(View view){
+        Intent intent = new Intent(this, Iniciar_sessao.class);
+        startActivity(intent);
     }
 }

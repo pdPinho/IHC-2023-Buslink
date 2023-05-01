@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">BusLink</string>
+    <string name="origem_text">Origem:</string>
+    <string name="destino_text">Destino:</string>
+    <string name="de_onde_text">de onde?</string>
+    <string name="para_onde_text">para onde?</string>
+    <string name="iniciar_sessao_text">Iniciar sessão</string>
 
     <string-array name="stops">
         <item>Aveiro Universidade</item>
