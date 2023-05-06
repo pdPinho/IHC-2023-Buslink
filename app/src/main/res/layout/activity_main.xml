@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="50dp">
+    tools:context=".MainActivity">
 
     <AutoCompleteTextView
         android:id="@+id/origin"
@@ -15,6 +14,10 @@
         android:height="48dp"
         android:completionThreshold="0"
         android:hint="@string/de_onde_text"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:nextFocusDown="@id/destination"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -29,6 +32,9 @@
         android:height="48dp"
         android:completionThreshold="0"
         android:hint="@string/para_onde_text"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.595"
@@ -93,11 +99,13 @@
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
         android:onClick="login"
         android:text="@string/iniciar_sessao_text"
+        app:cornerRadius="8dip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

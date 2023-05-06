@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     // button login handler
     public void login(View view){
-        Intent intent = new Intent(this, Iniciar_sessao.class);
+        Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 }

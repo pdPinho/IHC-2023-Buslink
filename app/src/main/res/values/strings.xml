@@ -7,9 +7,1044 @@
     <string name="iniciar_sessao_text">Iniciar sessão</string>
 
     <string-array name="stops">
-        <item>Aveiro Universidade</item>
-        <item>Vagos</item>
-        <item>Quintã</item>
-        <item>Ilhavo</item>
+        <item>AVEIRO (ISCAA)</item>
+        <item>AVEIRO (TERMINAL RODOVIÁRIO)</item>
+        <item>ARADAS</item>
+        <item>VERDEMILHO</item>
+        <item>PARAGEM VIRTUAL ZONA 2</item>
+        <item>CORGO COMUM</item>
+        <item>VISTA ALEGRE</item>
+        <item>VAGOS</item>
+        <item>ILHAVO - C.M. ILHAVO</item>
+        <item>AVEIRO ESTAÇÃO</item>
+        <item>LIMITE COROA III (Paragem Virtual)</item>
+        <item>SOSA</item>
+        <item>BOCO</item>
+        <item>CARREGOSA</item>
+        <item>OUCA</item>
+        <item>TABUACO (X)</item>
+        <item>TABUACO</item>
+        <item>RIO TINTO</item>
+        <item>S CATARINA</item>
+        <item>MESAS</item>
+        <item>IGREJA VELHA</item>
+        <item>COVAO LOBO</item>
+        <item>ANCAS 2</item>
+        <item>ANCAS (BAYER)</item>
+        <item>CABEÇO (AMOREIRA GANDARA)</item>
+        <item>Amoreira da Gandara</item>
+        <item>MADUREIRA</item>
+        <item>GROU</item>
+        <item>CABANA</item>
+        <item>PEDRALVA</item>
+        <item>PEDRALVA (X)</item>
+        <item>VILARINHO BAIRRO</item>
+        <item>VILARINHO BAIRRO (ESCOLAS)</item>
+        <item>AGUEDA (CENTRO RODOVIARIO)</item>
+        <item>SANGALHOS</item>
+        <item>FOGUEIRA</item>
+        <item>OLIVEIRA BAIRRO</item>
+        <item>MURTA</item>
+        <item>AGUADA BAIXO</item>
+        <item>CARQUEJO</item>
+        <item>BARRO</item>
+        <item>BARRO (X)</item>
+        <item>BORRALHA (X)</item>
+        <item>ANADIA</item>
+        <item>COIMBRA</item>
+        <item>S MATEUS</item>
+        <item>MOGOFORES</item>
+        <item>MOGOFORES (X)</item>
+        <item>FAMALICAO</item>
+        <item>Arcos</item>
+        <item>CURIA (X)</item>
+        <item>TAMENGOS</item>
+        <item>VENTOSA BAIRRO</item>
+        <item>ARINHOS</item>
+        <item>POVOA GARCAO</item>
+        <item>AGUIM (X)</item>
+        <item>ALPALHÃO</item>
+        <item>SERNADELO (X)</item>
+        <item>MEALHADA</item>
+        <item>CASAL COMBA (X)</item>
+        <item>MALAPOSTA CARQUEIJO</item>
+        <item>CARQUEIJO</item>
+        <item>STA. LUZIA</item>
+        <item>SARGENTO MOR</item>
+        <item>FORNOS (X)</item>
+        <item>ADEMIA</item>
+        <item>PEDRULHA</item>
+        <item>LORETO</item>
+        <item>SAMEL</item>
+        <item>ARIEIRO</item>
+        <item>PORTOURO (X)</item>
+        <item>PORTOURO</item>
+        <item>BEMPOSTA-ANADIA</item>
+        <item>VENDAS SAMEL</item>
+        <item>QUINTA PERDIGAO</item>
+        <item>CHIPAR</item>
+        <item>CHIPAR CIMA</item>
+        <item>CHIPAR BAIXO</item>
+        <item>POUTENA (X)</item>
+        <item>TORRES VILARINHO</item>
+        <item>ALFELOAS</item>
+        <item>PEREIRO</item>
+        <item>Avelas de Cima</item>
+        <item>S PEDRO</item>
+        <item>CANDIEIRA</item>
+        <item>FIGUEIRA BOIALVO</item>
+        <item>MATA CIMA (X)</item>
+        <item>BOIALVO</item>
+        <item>PARDEEIRO (X)</item>
+        <item>PARDEEIRO</item>
+        <item>Corgo de Baixo</item>
+        <item>ANADIA (Escola)</item>
+        <item>MOITA</item>
+        <item>VALE AVIM</item>
+        <item>VALE BOI (X)</item>
+        <item>FERREIROS</item>
+        <item>POVOA GAGO (X)</item>
+        <item>CANELAS</item>
+        <item>FERREIRINHOS</item>
+        <item>POVOA GAGO</item>
+        <item>VALE MO</item>
+        <item>JUNQUEIRA</item>
+        <item>Algeriz</item>
+        <item>PARADA</item>
+        <item>MONSARROS</item>
+        <item>VILA NOVA MONSARROS</item>
+        <item>POCO</item>
+        <item>S JOAO AZENHA</item>
+        <item>Avelãs de caminho</item>
+        <item>ARCOS</item>
+        <item>Malaposta</item>
+        <item>PAREDES BAIRRO</item>
+        <item>COUVELHA</item>
+        <item>LEVIRA</item>
+        <item>CURIA</item>
+        <item>MATA CURIA</item>
+        <item>HORTA</item>
+        <item>POV.GARCAO- ESC.PRIMARIA</item>
+        <item>CASAL BOLHO</item>
+        <item>BOLHO (X)</item>
+        <item>BOLHO</item>
+        <item>VENDA NOVA</item>
+        <item>PEDREIRA</item>
+        <item>MOGOFORES (ROTUNDA)</item>
+        <item>S.LOURENCO</item>
+        <item>LEVIRA - (RUA TORTA)</item>
+        <item>LEVIRA- (RUA PRINCIPAL)</item>
+        <item>AZENHA</item>
+        <item>BANHOS</item>
+        <item>MELADA</item>
+        <item>Poutena</item>
+        <item>QUINTÃ</item>
+        <item>SANTO ANDRE</item>
+        <item>FONTE ANGEAO</item>
+        <item>PONTE VAGOS</item>
+        <item>SANCHEQUIAS</item>
+        <item>GAFANHA BOA HORA</item>
+        <item>POCO CRUZ</item>
+        <item>CAIS AREAO</item>
+        <item>GAFANHA VAGUEIRA</item>
+        <item>CASA GUARDA</item>
+        <item>CAMARNEIRA</item>
+        <item>MOINHO VENTO</item>
+        <item>ESTRIREIRO</item>
+        <item>MOINHO MEIO</item>
+        <item>OIS BAIRRO</item>
+        <item>Espairo</item>
+        <item>OIA</item>
+        <item>FERMENTELOS</item>
+        <item>REGO</item>
+        <item>PERRAES</item>
+        <item>GIESTA</item>
+        <item>SILVEIRO</item>
+        <item>Aguim 2</item>
+        <item>FABRICA SANITANA</item>
+        <item>GRADA</item>
+        <item>GRADA (X)</item>
+        <item>AVEIRO UNIVERSIDADE</item>
+        <item>AVEIRO - HOSPITAL</item>
+        <item>AVEIRO - AV. STA JOANA</item>
+        <item>CACADORES 10</item>
+        <item>AVEIRO - PONTE PRAÇA</item>
+        <item>AVEIRO - CENTRO COMERCIAL OITA</item>
+        <item>AVEIRO - CTT</item>
+        <item>AVEIRO - R. LUIS GOMES CARVALHO</item>
+        <item>AVEIRO (GALITOS)</item>
+        <item>ESGUEIRA</item>
+        <item>ESGUEIRA IGREJA</item>
+        <item>OLHO AGUA</item>
+        <item>QUINTA SIMAO</item>
+        <item>Quinta do Simão (1)</item>
+        <item>ATALAIA</item>
+        <item>CACIA (Fabrica)</item>
+        <item>Cacia  Hotel João Padeiro</item>
+        <item>Angeja (Rotunda dos Leitões)</item>
+        <item>ANGEJA</item>
+        <item>Angeja (3)</item>
+        <item>ANGEJA (X)</item>
+        <item>FONTAO</item>
+        <item>Sao Marcos</item>
+        <item>Sao Marcos (1)</item>
+        <item>SOBREIRO</item>
+        <item>Sobreiro Capela</item>
+        <item>Sobreiro (1)</item>
+        <item>Sobreiro (2)</item>
+        <item>Sobreiro (3)</item>
+        <item>Albergaria a Velha</item>
+        <item>ALBERGARIA A VELHA</item>
+        <item>Arieros(1)</item>
+        <item>AREEIROS</item>
+        <item>Albergaria Anova(2)</item>
+        <item>Albergaria Anova(1)</item>
+        <item>ALBERGARIA A NOVA</item>
+        <item>Branca(4)</item>
+        <item>Branca(3)</item>
+        <item>Branca(2)</item>
+        <item>Branca(1)</item>
+        <item>BRANCA</item>
+        <item>Curval(1)</item>
+        <item>Curval</item>
+        <item>Pinheiro da Bemposta (2)</item>
+        <item>Pinheiro da Bemposta(1)</item>
+        <item>PINHEIRO BEMPOSTA</item>
+        <item>CANICOS</item>
+        <item>Travanca(2)</item>
+        <item>Travanca(1)</item>
+        <item>TRAVANCA</item>
+        <item>Silvares(1)</item>
+        <item>SILVARES</item>
+        <item>Oliveira de Azemeis Rotunda do BomBeiro</item>
+        <item>Oliveira deAzemeis(Rua Antonio Bernardo)</item>
+        <item>OLIVEIRA AZEMEIS</item>
+        <item>O.Azemeis(Praça Jose da Costa)</item>
+        <item>O.Azemeis(R.Boaventura)</item>
+        <item>Cidacos</item>
+        <item>COVO</item>
+        <item>PINHAO (X)</item>
+        <item>Vermoim(2)</item>
+        <item>Vermoim(1)</item>
+        <item>CALÇADA DE VERMOIM</item>
+        <item>Ossela(3)</item>
+        <item>OSSELA - RUA DE SOBRADELO</item>
+        <item>Ribeira do Meio (2)</item>
+        <item>Ribeira do Meio(1)</item>
+        <item>RIBEIRA MEIO</item>
+        <item>Ponte Nova (1)</item>
+        <item>PONTE NOVA</item>
+        <item>Barreiro (3)</item>
+        <item>RUA JOSÉ DE ALMEIDA</item>
+        <item>Barreiro (1)</item>
+        <item>BARREIRO</item>
+        <item>Ossela (FERREIRA DE CASTRO)</item>
+        <item>OSSELA - RUA DOS SALGEIROS</item>
+        <item>Baralhas(1)</item>
+        <item>BARALHAS</item>
+        <item>Pinheiro Manso(1)</item>
+        <item>PINHEIRO MANSO</item>
+        <item>Vale Cambra(3)</item>
+        <item>Vale Cambra(2)</item>
+        <item>VALE CAMBRA</item>
+        <item>O.Azemeis(Rainha)</item>
+        <item>O.Azemeis(R.Manuel brandao)</item>
+        <item>ESTARREJA</item>
+        <item>ESTARREJA (ESTAÇÃO CP)</item>
+        <item>Estarreja (Rua Caetano Ferreira)</item>
+        <item>Arrotinha Escola</item>
+        <item>ARROTINHA</item>
+        <item>Estarreja (Escola Secundaria)</item>
+        <item>Estareja(Rua S.Tiago)</item>
+        <item>Beduido(Cemiterio)</item>
+        <item>AREOSA NORTE</item>
+        <item>SANTO AMARO</item>
+        <item>Santo Amaro (Beduido)</item>
+        <item>Santo Amaro (Arrota)</item>
+        <item>TONCE</item>
+        <item>Tonce (Cruzamento)</item>
+        <item>TONCE (R. DR. ALBINO DOS REIS)</item>
+        <item>ALUMIEIRA</item>
+        <item>Rodes</item>
+        <item>ADAES</item>
+        <item>Adaes Travessa do Sobral</item>
+        <item>RUA DO CAVALAR</item>
+        <item>Ul</item>
+        <item>Ul(1)</item>
+        <item>OURICOSA</item>
+        <item>Ouriçosa(1)</item>
+        <item>Oliveira Azemeis Escola Soares de Basto</item>
+        <item>OVAR (EST)</item>
+        <item>Ovar (Yazaki)</item>
+        <item>OVAR (ESC SECUNDARIA)</item>
+        <item>Ovar Cinema</item>
+        <item>OVAR Mercado</item>
+        <item>Ovar( Rua da Fonte da Madria)</item>
+        <item>Ovar (São João de Ovar)</item>
+        <item>CABANOES</item>
+        <item>Cimo de Vila (Escola)</item>
+        <item>Cimo de Vila N327 (Rua do Casal)</item>
+        <item>Cimo de Vila N327(Salgueiral Cima)</item>
+        <item>CIMO VILA</item>
+        <item>Cabomonte N327</item>
+        <item>Cabomonte</item>
+        <item>Souto N327(Rua da Saibeira)</item>
+        <item>Souto N327</item>
+        <item>SOUTO FEIRA</item>
+        <item>Agoncida (Rua do Mirante)</item>
+        <item>Agoncida (Cruzamento)</item>
+        <item>Agoncida( N327)</item>
+        <item>Agoncida</item>
+        <item>Fermil</item>
+        <item>Fermil (Rua professor Leão)</item>
+        <item>Vila nova de Cucujães(Mira)</item>
+        <item>COUTO CUCUJAES (Bessa)</item>
+        <item>Couto cucujães (centro de Saúde)</item>
+        <item>Couto cucujães(Rua do Mosteiro 1786)</item>
+        <item>COUTO CUCUJAES (EST)</item>
+        <item>Cavadas (Rua das Mangas)</item>
+        <item>CAVADAS</item>
+        <item>Alto da Pica</item>
+        <item>MARGONCA</item>
+        <item>Sao Joao da Madeira Molaflex</item>
+        <item>Sao Joao da Madeira(G.N.R)</item>
+        <item>Sao Joao da Madeira (quinta)</item>
+        <item>São João da  Madeira (CCT)</item>
+        <item>AVEIRO - AV. LOURENÇO PEIXINHO</item>
+        <item>AVEIRO - AV LOURENÇO PEIXINHO CC OITA</item>
+        <item>CACIA</item>
+        <item>Cacia (1)</item>
+        <item>Angeja(Rampinha)</item>
+        <item>VALE MAIOR (X)</item>
+        <item>VALE MAIOR</item>
+        <item>MOUQUIM</item>
+        <item>POVOA</item>
+        <item>CARVOEIRO</item>
+        <item>Foz(1)</item>
+        <item>FOZ</item>
+        <item>POCO SANTIAGO</item>
+        <item>PESSEGUEIRO (X)</item>
+        <item>PESSEGUEIRO</item>
+        <item>VINHA DÓNEGA</item>
+        <item>Paredes (X)</item>
+        <item>Sever do Vouga Escola Secundaria</item>
+        <item>Sever do Vouga (Escola)</item>
+        <item>Sever do Vouga (Camara)</item>
+        <item>SEGURANÇA SOCIAL</item>
+        <item>SEVER VOUGA</item>
+        <item>Peso(X)</item>
+        <item>LEIRAS</item>
+        <item>Senhorinha</item>
+        <item>Casteloes do Vouga Zona Industrial</item>
+        <item>Casteloes do Vouga(1)</item>
+        <item>CASTELOES</item>
+        <item>Louriçal</item>
+        <item>PRESAS</item>
+        <item>Portas Vermelhas</item>
+        <item>Dornelas(1)</item>
+        <item>Dornelas(X)</item>
+        <item>DORNELAS</item>
+        <item>Decide(1)</item>
+        <item>DECIDE</item>
+        <item>Cartim(1)</item>
+        <item>CARTIM</item>
+        <item>CARTIM-FONTANARIO</item>
+        <item>RABACEIRA</item>
+        <item>RABAC-C.CABRIL</item>
+        <item>Martir (1)</item>
+        <item>MARTIR</item>
+        <item>Vale Cambra Dairas Escolas</item>
+        <item>Arrotinha(1)</item>
+        <item>Santo Amaro Rua da Feira</item>
+        <item>Santiais (1)</item>
+        <item>Campo</item>
+        <item>SANTIAIS</item>
+        <item>BARREIRO DE CIMA</item>
+        <item>SOUTELO</item>
+        <item>Estarreja Ponte Velha</item>
+        <item>BREJO</item>
+        <item>SENHORA DO MONTE</item>
+        <item>Senhora do Terço</item>
+        <item>OLHO D\' ÁGUA</item>
+        <item>SALREU</item>
+        <item>Salreu(1)</item>
+        <item>Salreu(Cemiterio)</item>
+        <item>Salreu(2)</item>
+        <item>CANELAS (JARDIM)</item>
+        <item>CAMPO DA CRUZ</item>
+        <item>FERMELÃ (ROXICO)</item>
+        <item>FERMELA</item>
+        <item>Fermela (Cruzamento)</item>
+        <item>Salreu Igreja</item>
+        <item>CAMPINOS</item>
+        <item>Vale dos Castanheiros</item>
+        <item>Porto de Baixo</item>
+        <item>Soutelo (1)</item>
+        <item>Soutelo (Rua 1 de Maio)</item>
+        <item>Campos</item>
+        <item>Ovar(Rua Doutor Pedro Chaves)</item>
+        <item>Ovar(Rua Doutor Pedro Chaves 1)</item>
+        <item>RIBEIRA (X)</item>
+        <item>Ribeiras(Rua doCruzeiro)</item>
+        <item>Marinhas(Estrada da Marinha)</item>
+        <item>MARINHA</item>
+        <item>Marinha (Rua Manuel Lopes Conde)</item>
+        <item>Marinha(Escola)</item>
+        <item>Marinha(Rua Pedro Homem de Melo)</item>
+        <item>Carregal (Rua Daniel Constante)</item>
+        <item>TORRAO LAMEIRO</item>
+        <item>Torrao do Lameiro(1)</item>
+        <item>Torrao do Lameiro(2)</item>
+        <item>Torrao do Lameiro(3)</item>
+        <item>Torrão do Lameiro 4</item>
+        <item>QUINTAS DO NORTE</item>
+        <item>Quintas do Norte(2)</item>
+        <item>Quintas do Norte(3)</item>
+        <item>QUINTAS SUL</item>
+        <item>Quintas do Sul(1)</item>
+        <item>Quintas do Sul(3)</item>
+        <item>Torreira Escola</item>
+        <item>TORREIRA</item>
+        <item>R. Desembargador Correia Teles</item>
+        <item>POVOA CIMA</item>
+        <item>MONTE CIMA</item>
+        <item>Pardilho (Cuzamento)</item>
+        <item>PARDILHO</item>
+        <item>Ovar (rua da Capela)</item>
+        <item>S MIGUEL</item>
+        <item>S.Miguel(1)</item>
+        <item>Cruzamento N109</item>
+        <item>Cadaval</item>
+        <item>Mina (109)</item>
+        <item>VALEGA (X)</item>
+        <item>VALEGA (ESC SEC C+S)</item>
+        <item>Seixo</item>
+        <item>Seixo (2)</item>
+        <item>Seixo (1)</item>
+        <item>VALEGA</item>
+        <item>Bustelo</item>
+        <item>PORTO LABOSO</item>
+        <item>Porto Laboso(Cruz)</item>
+        <item>Carvalho de Cima (Largo Sra.Das Dores)</item>
+        <item>Cavalho de Cima</item>
+        <item>Carvalho de Baixo</item>
+        <item>Angeja(2)</item>
+        <item>Angeja(1)</item>
+        <item>AMONIACO PORTUGUES</item>
+        <item>AMONIACO PORTUGUES (X)</item>
+        <item>FALCAO</item>
+        <item>SARDINHA</item>
+        <item>BANDEIRA</item>
+        <item>Avanca Capela do Santo</item>
+        <item>AVANCA (CENTRO)</item>
+        <item>Avanca (Escola)</item>
+        <item>Fabrica da Nestle</item>
+        <item>AVANCA (EST)</item>
+        <item>LOMBAO</item>
+        <item>ESTRADA</item>
+        <item>Rua Nova</item>
+        <item>Rua Nova(1)</item>
+        <item>Rua da Capela do Outeiro</item>
+        <item>Rua Seixo Branco Cruzamento</item>
+        <item>Rua do Seixo Branco(1)</item>
+        <item>Rua do Seixo Branco</item>
+        <item>S Joao de Valega Capela</item>
+        <item>S.Joao de Valega Escola</item>
+        <item>Rua das Espartidouras</item>
+        <item>Valega (Rua da Igreja Matriz)</item>
+        <item>Valongueiro(1)</item>
+        <item>Valongueiro(Cruzamento)</item>
+        <item>Valongueiro</item>
+        <item>Passo(4)</item>
+        <item>Passo (3)</item>
+        <item>Passo(2)</item>
+        <item>PASSO</item>
+        <item>Passo(1)</item>
+        <item>Vide (Cruzamento)</item>
+        <item>Vide(1)</item>
+        <item>VIDE (S MARTINHO GANDARA)</item>
+        <item>RUA DE VIDE</item>
+        <item>Gandara</item>
+        <item>FELGUEIRA</item>
+        <item>Madail (Rua Joaquim Moreira)</item>
+        <item>MADAIL (R. DR. ANIBEL BELEZA)</item>
+        <item>MADAIL</item>
+        <item>RUA DE FIGUEIREDO</item>
+        <item>Oliveira Azemeis(Mimosa)</item>
+        <item>OLIVEIRA AZEMEIS (EST)</item>
+        <item>Oliveira de Azemeis (S.Antonio)</item>
+        <item>RUA FREI CAETANO BRANDÃO 1</item>
+        <item>RUA FREI CAETANO BRANDÃO</item>
+        <item>Alto da Fabrica</item>
+        <item>Sao Tiago</item>
+        <item>FARIA BAIXO</item>
+        <item>Faria de Cima (1)</item>
+        <item>FARIA CIMA</item>
+        <item>Quinta (2)</item>
+        <item>Quinta (1)</item>
+        <item>QUINTA</item>
+        <item>Sao joao da madeira (Quinta) (1)</item>
+        <item>O.Azemeis(Hospital)</item>
+        <item>BAIRRO CENTRO VIDREIRO</item>
+        <item>Bairro Centro Vidreiro(1)</item>
+        <item>Escola Ferreira de Castro</item>
+        <item>Escola Ferreira de Castro(1)</item>
+        <item>BUSTELO</item>
+        <item>Bustelo (R. Quinta do Covo X)</item>
+        <item>Bustelo (Capela Nova)</item>
+        <item>Bustelo (Capela Velha)</item>
+        <item>Bustelo (R Capela St Antonio)</item>
+        <item>VILA CHA</item>
+        <item>RUA DOS MEIRAIS</item>
+        <item>Costa Má (Rua dos Meirais)</item>
+        <item>Costa Má (Cemiterio)</item>
+        <item>RUA DAS SARDINHEIRAS</item>
+        <item>Costa Má</item>
+        <item>Costa Má (Rua das Marcadas)</item>
+        <item>SAMIL (X)</item>
+        <item>SAMIL</item>
+        <item>TRAVESSAS</item>
+        <item>São João Madeira (Ponte)</item>
+        <item>Sao Joao da Madeira (Rotunda do Sapateiro)</item>
+        <item>BUSTURENGA</item>
+        <item>RIBEIRA FRAGUAS</item>
+        <item>Albergaria a Nova (rua do bairro novo)</item>
+        <item>Serraiva(1)</item>
+        <item>Escola da Branca</item>
+        <item>SERRAIVA</item>
+        <item>FRADELOS</item>
+        <item>Fradelos (Rua de Nossa Senhora dos Milagres)</item>
+        <item>PALHAL</item>
+        <item>Palhal(Rua Central)</item>
+        <item>Palhal(1)</item>
+        <item>ALTO BARREIROS</item>
+        <item>CARVALHAL</item>
+        <item>Ribeira de Fraguas (Igreja)</item>
+        <item>Vale</item>
+        <item>TELHADELA</item>
+        <item>Telhadela Praça Antonio Marques deCampos</item>
+        <item>Bustelo (5)</item>
+        <item>Bustelo (6)</item>
+        <item>PINDELO</item>
+        <item>Pindelo (1)</item>
+        <item>PINDELO - LADEIRA</item>
+        <item>PINDELO - R ALMEIDA GARRETT</item>
+        <item>CARRO QUEBRADO</item>
+        <item>AV. FERREIRA DE CASTRO</item>
+        <item>RUA 13 DE JULHO</item>
+        <item>ARRIFANINHA</item>
+        <item>Arrifaninha(1)</item>
+        <item>ARMENTAL</item>
+        <item>Armental(1)</item>
+        <item>RELVA</item>
+        <item>Relva (1)</item>
+        <item>LARGO AGUA LEVADA</item>
+        <item>Agua Levada(1)</item>
+        <item>BOCA DO MONTE</item>
+        <item>CASALDIMA</item>
+        <item>SOUTO</item>
+        <item>ESPINHEIRA</item>
+        <item>NOBRIJO</item>
+        <item>SAMUEL</item>
+        <item>Besturenga</item>
+        <item>VILARINHO S ROQUE</item>
+        <item>Pinheiro da Bemposta(3)</item>
+        <item>PINHEIRO BEMPOSTA (ESC)</item>
+        <item>Pinheiro da Pemposta (Cruzeiro)</item>
+        <item>Pinheiro da Bemposta(estação)</item>
+        <item>Pinheiro da Bemposta (Cruzamento)</item>
+        <item>Figueiredo de Baixo(Quinta da Cerciaz)</item>
+        <item>FIGUEIREDO BAIXO</item>
+        <item>Figueirero de Baixo (escola)</item>
+        <item>FIGUEIREDO CIMA</item>
+        <item>Figueiredo de Cima (1)</item>
+        <item>Figueiredo de Cima (Apeadeiro)</item>
+        <item>Figueiredo de Cima (2)</item>
+        <item>Ul (Rua do Pereiro)</item>
+        <item>Ul (Cruzeiro)</item>
+        <item>Ul (Rua do Cavalar)</item>
+        <item>Minhoteira</item>
+        <item>PARDIEIRO</item>
+        <item>Ovar (esc. julio Dinis)</item>
+        <item>OVAR (CASAL)</item>
+        <item>Ovar (Casal) (1)</item>
+        <item>Puchadouro (2)</item>
+        <item>Puchadouro</item>
+        <item>Puchadouro (1)</item>
+        <item>Sargaçal (X)</item>
+        <item>Sargaçal</item>
+        <item>Sargaçal(Rua Dr. Acacio Valente)</item>
+        <item>Valega( Cruzamento)</item>
+        <item>Carvalho de Baixo Escola</item>
+        <item>Rua dos Moinhos (X)</item>
+        <item>Estrada</item>
+        <item>Outeirinho(X)</item>
+        <item>Rua das Silveiras(X)</item>
+        <item>Carvalhais(X)</item>
+        <item>Cristelo(X)</item>
+        <item>Cristelo</item>
+        <item>Cristelo(Rua do Lagoeiro)</item>
+        <item>Avanca(1)</item>
+        <item>Esc Laginhas</item>
+        <item>CABO DA CARREIRA</item>
+        <item>Pardilho (1)</item>
+        <item>FONTELA</item>
+        <item>Avanca (2)</item>
+        <item>Rua do Pinhal</item>
+        <item>Macieira Beco da Fonte</item>
+        <item>RUA DE MACIEIRA</item>
+        <item>RUA DA SERRAZINA</item>
+        <item>São Martinho da Gandara (1)</item>
+        <item>S.Martinho da Gandara (Cruz)</item>
+        <item>S MARTINHO GANDARA (IGRJ)</item>
+        <item>PONTE PRAÇA - BIBLIOTECA</item>
+        <item>AVEIRO - MUSEU STA JOANA</item>
+        <item>VERDEMILHO SEMÁFORO</item>
+        <item>PARAGEM VIRTUAL ZONA 1</item>
+        <item>CORGO COMUM (X)</item>
+        <item>CENTRO SAUDE/MUSEU MARITIMO</item>
+        <item>ILHAVO (Jardim Henriqueta Maia)</item>
+        <item>ILHAVO - UNI CUIDADOS CONTINUADOS</item>
+        <item>VISTA ALEGRE  - TALHO</item>
+        <item>CARVALHEIRA (X)</item>
+        <item>VAGOS (ROTUNDA)</item>
+        <item>VAGOS - ESCOLA (X)</item>
+        <item>QUINTÃ (STAND)</item>
+        <item>QUINTÃ - GALP</item>
+        <item>SANTO ANDRÉ (X)</item>
+        <item>CABECINHAS</item>
+        <item>CALVAO</item>
+        <item>CALVÃO (X)</item>
+        <item>CANTO DE CALVÃO</item>
+        <item>SEIXO (X)</item>
+        <item>CABEÇO DE MIRA</item>
+        <item>PORTOMAR</item>
+        <item>MIRA (FARMÁCIA)</item>
+        <item>MIRA</item>
+        <item>CARROMEU</item>
+        <item>ERMIDA</item>
+        <item>ERMIDA - EST. 234</item>
+        <item>COCHADAS  (X)</item>
+        <item>CANICEIRA</item>
+        <item>POVOEIRAS</item>
+        <item>CASAL JOÃO</item>
+        <item>TOCHA</item>
+        <item>TOCHA (ESC EB 2/3)</item>
+        <item>HOSPITAL ROVISCO PAIS</item>
+        <item>MORROS (X)</item>
+        <item>PEDROS (CAFE M EVARISTO)</item>
+        <item>PEDROS-CAFE CURIOSO</item>
+        <item>BOM SUCESSO</item>
+        <item>LOUREIROS</item>
+        <item>CASTANHEIRO</item>
+        <item>CAMARÇÃO</item>
+        <item>CASAL NOVO</item>
+        <item>CASAL NOVO (LAVADOURO)</item>
+        <item>CASAL NOVO (KM 108)</item>
+        <item>CEVADA</item>
+        <item>COVA DA SERPE</item>
+        <item>CABANAS</item>
+        <item>BRENHA</item>
+        <item>LIRIOS</item>
+        <item>BRENHA - SINALUX</item>
+        <item>TAVAREDE</item>
+        <item>TAVAREDE (ROTUNDA)</item>
+        <item>TAVAREDE (CASAL ROBIN)</item>
+        <item>VÁRZEA (X)</item>
+        <item>VÁRZEA (ESCOLA)</item>
+        <item>FIGUEIRA FOZ</item>
+        <item>AVEIRO - CAÇADORES 10 - SÉ</item>
+        <item>AVEIRO (Forum Volta)</item>
+        <item>AVEIRO - AV. 25 ABRIL</item>
+        <item>AVEIRO - R. MÁRIO SACRAMENTO</item>
+        <item>AVEIRO - BOMBEIROS VELHOS</item>
+        <item>AVEIRO - PT INOVAÇÃO</item>
+        <item>ARADAS (Rotunda)</item>
+        <item>ARADAS (Gavião 2)</item>
+        <item>ARADAS (Protecnico X)</item>
+        <item>ARADAS (Correios)</item>
+        <item>ARADAS - 2</item>
+        <item>ARADAS(Escola)</item>
+        <item>ARADAS -1</item>
+        <item>COIMBRAO</item>
+        <item>Quinta Picado (Escola)</item>
+        <item>QUINTA PICADO (Café Flor)</item>
+        <item>Quinta Picado -2</item>
+        <item>QUINTA PICADO (Igreja)</item>
+        <item>Quinta Picado -1</item>
+        <item>QUINTA PICADO (X)</item>
+        <item>QUINTA PICADO</item>
+        <item>QUINTÃS</item>
+        <item>QUINTÃS (Praça da Palha)</item>
+        <item>SALGUEIRO</item>
+        <item>SALGUEIRO (ROT.)</item>
+        <item>SALGUEIRO (Igreja)</item>
+        <item>SALGUEIRO (Escola)</item>
+        <item>PALHAÇA (Rib. Fontão)</item>
+        <item>PALHAÇA (Paraiso)</item>
+        <item>PALHACA</item>
+        <item>PES (GRUPEL)</item>
+        <item>PES (AUTO SALGUEIRO)</item>
+        <item>SALGUEIRO ( LARGO FEIRA )</item>
+        <item>BUSTOS</item>
+        <item>MAMARROSA</item>
+        <item>QUINTA DO GORDO</item>
+        <item>LABRENGOS</item>
+        <item>COVOES</item>
+        <item>FONTE ERRADA</item>
+        <item>MONTINHO (X)</item>
+        <item>POCARICA</item>
+        <item>CANTANHEDE</item>
+        <item>PRAIA MIRA</item>
+        <item>CASA SAGRADA FAMILIA</item>
+        <item>VIDEIRA</item>
+        <item>JUNTA COLONIZAÇÃO INTERNA</item>
+        <item>BARRA (SECA DA BARRA)</item>
+        <item>BARRA - PARQUE CAMPISMO</item>
+        <item>Praia da Barra</item>
+        <item>BARRA - LAMPEÃO</item>
+        <item>BARRA - FAROL</item>
+        <item>BARRA - TININHA</item>
+        <item>Porto Comercial</item>
+        <item>PORTO COMERCIAL 2</item>
+        <item>STELAMARIS</item>
+        <item>CALE DA VILA - CLINICA DENTARIA</item>
+        <item>CALE DA VILA - TAXIS</item>
+        <item>Cale da Vila</item>
+        <item>GAFANHA DA NAZARÉ - GAFAPÃO</item>
+        <item>GAFANHA DA NAZARÉ-ROSITA</item>
+        <item>Gafanha Nazare</item>
+        <item>GAFANHA DA NAZARÉ - TEM TEM</item>
+        <item>Cambeia</item>
+        <item>FORTE DA BARRA - LANCHA</item>
+        <item>Forte da Barra</item>
+        <item>Marinha Velha</item>
+        <item>BARRA - LARGO EMIGRANTE</item>
+        <item>SECA DA BARRA - AVENIDA</item>
+        <item>Costa Nova (Biarritz)</item>
+        <item>COSTA NOVA - MARINA</item>
+        <item>COSTA NOVA - PARQUE</item>
+        <item>Costa Nova (Larg A Anca)</item>
+        <item>CALE DA VILA (PRIMAVERA)</item>
+        <item>CHAVE - ROSACOVA</item>
+        <item>CHAVE - CASA DO POVO</item>
+        <item>CHAVE - CICLO</item>
+        <item>CHAVE CRUZEIRO</item>
+        <item>CHAVE PARADI</item>
+        <item>GAFANHA NAZARÉ X</item>
+        <item>GAFANHA NAZARÉ (LILI NOIVAS)</item>
+        <item>MARINHA VELHA X</item>
+        <item>MARINHA VELHA (LUCILIAS)</item>
+        <item>Gafanha Encarnacao</item>
+        <item>GAF DA ENCARNAÇÃO (R DE ENTRE CAMPOS)</item>
+        <item>GAFANHA DA ENCARNAÇÃO-ESCOLA PRIMÁRIA</item>
+        <item>Mota da Gafanha</item>
+        <item>GAFANHA DA ENCARNAÇÃO (RUA DE ILHAVO)</item>
+        <item>GAFANHA DO CARMO</item>
+        <item>GAFANHA DO CARMO (ALMIMNHAS)</item>
+        <item>GAFANHA CARMO - IGREJA</item>
+        <item>GAFANHA DO CARMO (ANTONIO LOURO)</item>
+        <item>GAFANHA DO CARMO (MANUEL ALBERTO)</item>
+        <item>Gafanha Vagueira</item>
+        <item>Vagueira</item>
+        <item>VAGUEIRA (X)</item>
+        <item>GAFANHA DA BOA HORA - CAFÉ</item>
+        <item>GAFANHA DA BOA HORA - IGREJA</item>
+        <item>GAFANHA DA BOA HORA-ESTREMO</item>
+        <item>CAIS DO AREÃO - MARIO RIBEIRO</item>
+        <item>CAIS DO AREÃO - LARANJEIRO</item>
+        <item>CALVAO (COLEGIO)</item>
+        <item>POÇO DA CRUZ</item>
+        <item>CANHOTA</item>
+        <item>PRAIA DE MIRA (MELO)</item>
+        <item>GAFANHA D\'AQUEM</item>
+        <item>ILHAVO (ESCOLA SECUNDÁRIA)</item>
+        <item>ILHAVO - ESCOLA EB 2/3</item>
+        <item>PRESA</item>
+        <item>LEGUA - CAPELA</item>
+        <item>PASSADOURO</item>
+        <item>R. PRIOR VALENTE</item>
+        <item>VALE ILHAVO (CAPELA VELHA)</item>
+        <item>VALE ILHAVO (CAFE)</item>
+        <item>VALE ILHAVO (ESCOLA)</item>
+        <item>ARMAZENS JF</item>
+        <item>MOITINHOS</item>
+        <item>MOITINHOS (CAPELA)</item>
+        <item>LEGUA (ESCOLAS)</item>
+        <item>LEGUA - SANTO ANTONIO</item>
+        <item>ESCOLA SECUNDÁRIA</item>
+        <item>ILHAVO (BISPO)</item>
+        <item>Gafanha Aquem (carreira tiro)</item>
+        <item>Gaf. da Mota (X)</item>
+        <item>Gafanha Nazare Remelha</item>
+        <item>Loure Escolas</item>
+        <item>Albergaria a Velha (escolas)</item>
+        <item>ASSILHO</item>
+        <item>FRIAS CIMA (X)</item>
+        <item>Frias Rua 28 Setembro</item>
+        <item>FIAL (X)</item>
+        <item>Rua da Escola (X)</item>
+        <item>Rua da Fonte</item>
+        <item>Sra da Boa Viagem</item>
+        <item>FRIAS</item>
+        <item>Frossos Rua do Barreiro</item>
+        <item>FROSSOS (IGRJ)</item>
+        <item>Frossos Cruzeiro</item>
+        <item>FROSSOS (X)</item>
+        <item>LOURE</item>
+        <item>Sao Joao do Loure(Rua do Ribeiro)</item>
+        <item>Sao Joao de Loure(Rua da Trapa)</item>
+        <item>Fontao Capela</item>
+        <item>TRAVASSO</item>
+        <item>Frossos</item>
+        <item>Murtorio (rua do Outeiro)</item>
+        <item>Rua do Outeiro</item>
+        <item>GAFANHA DO CARMO - ALMINHAS</item>
+        <item>ROTUNDA ARIEIRO</item>
+        <item>BUSTOS - GNR</item>
+        <item>FEITEIRA (IGREJA)</item>
+        <item>PORTO CLERIGO (X)</item>
+        <item>OLIVEIRA DO BAIRRO (EB23)</item>
+        <item>OLIVEIRA DO BAIRRO (ESC SEC)</item>
+        <item>AREEIRO</item>
+        <item>VILA NOVA (Igreja)</item>
+        <item>MALHAPAO (Largo)</item>
+        <item>AGUAS BOAS</item>
+        <item>AGUAS BOAS (Padaria)</item>
+        <item>CARRIS (ROTUNDA)</item>
+        <item>CARRIS (Capela)</item>
+        <item>OIÃ (C+S)</item>
+        <item>OIA (X)</item>
+        <item>ADREP</item>
+        <item>C.SOCIAL</item>
+        <item>CHOCA MAR</item>
+        <item>PARADA BAIXO</item>
+        <item>PARADITA</item>
+        <item>VERGAS NORTE</item>
+        <item>VIGIA</item>
+        <item>LOMBA</item>
+        <item>S ANTONIO VAGOS</item>
+        <item>LAMEIRO - VAGOS</item>
+        <item>LOMBO MEAO</item>
+        <item>LAVANDEIRA</item>
+        <item>PEDRICOSA</item>
+        <item>SALGUEIRO (X)</item>
+        <item>S JOAO LOURE</item>
+        <item>PINHEIRO</item>
+        <item>ALQUERUBIM</item>
+        <item>AMEAL</item>
+        <item>BEDUIDO</item>
+        <item>PAUS</item>
+        <item>SALGUEIRAL</item>
+        <item>MOURISCA VOUGA</item>
+        <item>QUINTA ALAGOA</item>
+        <item>SEREM</item>
+        <item>SEREM (X)</item>
+        <item>VOUGA</item>
+        <item>PEDACAES</item>
+        <item>AGUADA BAIXO (X)</item>
+        <item>SERNADA VOUGA</item>
+        <item>MACINHATA VOUGA</item>
+        <item>BECO</item>
+        <item>FERMENTOES</item>
+        <item>BRUNHIDO</item>
+        <item>CARVALHAL (PORTELA)</item>
+        <item>VALONGO VOUGA</item>
+        <item>ARRANCADA VOUGA</item>
+        <item>AGUIEIRA</item>
+        <item>MOURISCA (Capela)</item>
+        <item>ORONHE (X)</item>
+        <item>CASAL ALVARO</item>
+        <item>EIROL</item>
+        <item>S JOAO LOURE (X)</item>
+        <item>EIXO (Pass. Nivel)</item>
+        <item>EIXO (R. Joao Estevao)</item>
+        <item>EIXO (Ent. R. Avelino Figueiredo)</item>
+        <item>EIXO - ENT. R. CILHA SARDINHA</item>
+        <item>EIXO (R Monte)</item>
+        <item>EIXO (Campo Futebol)</item>
+        <item>EIXO (Forno)</item>
+        <item>EIXO (Escolas)</item>
+        <item>EIXO</item>
+        <item>EIXO (Lavadouro)</item>
+        <item>AZURVA (R. Eirinha)</item>
+        <item>AZURVA (Ent. R. Eiras)</item>
+        <item>AZURVA</item>
+        <item>AZURVA (R. Agostinho Silva)</item>
+        <item>AZURVA (R. Republica)</item>
+        <item>AZURVA (Repsol)</item>
+        <item>ALAGOAS</item>
+        <item>ALAGOAS (R. 31 Janeiro)</item>
+        <item>ALAGOAS (R. 31 Janeiro - 2)</item>
+        <item>ALAGOAS (Cruz. PSP)</item>
+        <item>ESGUEIRA (Lavadouro)</item>
+        <item>ESGUEIRA (R. Costa Cascais)</item>
+        <item>ESGUEIRA (Centro)</item>
+        <item>ESGUEIRA (Escolas X)</item>
+        <item>ESGUEIRA (R. Viseu)</item>
+        <item>AVEIRO - AV. 25 ABRIL ESCOLAS</item>
+        <item>RENDO</item>
+        <item>FELGARES (X)</item>
+        <item>SILVA ESCURA</item>
+        <item>ROMEZAL</item>
+        <item>VALE DA ANTA</item>
+        <item>AGUEDA (EST)</item>
+        <item>CENTRO COMERCIAL (R B Xavier)</item>
+        <item>AGUEDA (PISCINAS)</item>
+        <item>CINEMA S PEDRO AGUEDA</item>
+        <item>CHAS (ESC)</item>
+        <item>CORREIOS</item>
+        <item>MERCADO AGUEDA</item>
+        <item>SARDAO</item>
+        <item>CASAIS BORRALHA</item>
+        <item>CLUB TENIS</item>
+        <item>BORRALHA (JUNTA FREG)</item>
+        <item>BREJO (IC2) (X)</item>
+        <item>CARRASQUEIRA</item>
+        <item>RANDAM</item>
+        <item>ROMPIDAS</item>
+        <item>POVOA CARVALHA</item>
+        <item>POVOA IGREJA</item>
+        <item>RECARDAES</item>
+        <item>RECARDAES (Capela)</item>
+        <item>PONTE CAMPO</item>
+        <item>ESC FERNANDO CALDEIRA</item>
+        <item>ESC SEC ADOLFO PORTELA</item>
+        <item>AGUEDA (GNR)</item>
+        <item>QUINTA ALAGOA (X)</item>
+        <item>ASSOC IND AGUEDA</item>
+        <item>CENTRO FORM PROFISSIONAL</item>
+        <item>QUINTA ALAGOA (ESC SUP TEC)</item>
+        <item>MOURISCA (Farmacia)</item>
+        <item>MOURISCA (ESC)</item>
+        <item>MOURISCA (Av 25 Abril)</item>
+        <item>MOURISCA (R Nogueira)</item>
+        <item>CASTROVAES</item>
+        <item>TROFA (IGRJ)</item>
+        <item>TROFA (S Sebastiao)</item>
+        <item>CENTRO SAUDE</item>
+        <item>S PEDRO (Bairro FFH)</item>
+        <item>ESC MARQUES CASTILHO</item>
+        <item>S SEBASTIAO (Capela)</item>
+        <item>ASSEQUINS</item>
+        <item>URB SOUTO RIO</item>
+        <item>ALHANDRA</item>
+        <item>CATRAIA (Qta Voilante)</item>
+        <item>CATRAIA (Alminhas)</item>
+        <item>ASSEQUINS (Casa Povo)</item>
+        <item>AMEAL (C Comercial)</item>
+        <item>AMEAL (Av Emigrante)</item>
+        <item>BICHA MOURA</item>
+        <item>CASAINHO</item>
+        <item>ORONHE</item>
+        <item>ESPINHEL</item>
+        <item>CRASTO</item>
+        <item>PARADELA</item>
+        <item>PIEDADE</item>
+        <item>RAIVO</item>
+        <item>BOLFIAR</item>
+        <item>REDONDA</item>
+        <item>CASTANHEIRA VOUGA (X)</item>
+        <item>CASTANHEIRA VOUGA</item>
+        <item>AVELAL (X)</item>
+        <item>CORGA SERRA</item>
+        <item>CARVALHAL (X)</item>
+        <item>PAUL BELAZAIMA</item>
+        <item>S JOAO MONTE</item>
+        <item>PARANHOS ARCA</item>
+        <item>VARZIELAS (X)</item>
+        <item>VARZIELAS</item>
+        <item>MONTE TESO</item>
+        <item>CARAMULO                                          </item>
+        <item>TROFA</item>
+        <item>SEGADAES</item>
+        <item>FONTINHA</item>
+        <item>FUJACOS</item>
+        <item>SILVEIRA</item>
+        <item>MALHAPAO</item>
+        <item>A FERREIROS CIMA</item>
+        <item>PRESTIMO</item>
+        <item>VALE MULHER</item>
+        <item>VENTOSO</item>
+        <item>SEIXO (X) - Agueda</item>
+        <item>FRAGUAS</item>
+        <item>TALHADAS</item>
+        <item>CARRAZEDO</item>
+        <item>HORTAS (PRÈSTIMO)</item>
+        <item>CAMBRA (PRESTIMO)</item>
+        <item>CASAL (X)</item>
+        <item>PRESTIMO (X)</item>
+        <item>BARROSA</item>
+        <item>POUSADAS (PRESTIMO)</item>
+        <item>SERRA CIMA</item>
+        <item>CABECA CAO</item>
+        <item>CABEÇO CAO(X)</item>
+        <item>MACIEIRA ALCOBA (X)</item>
+        <item>MACIEIRA ALCOBA</item>
+        <item>URGUEIRA</item>
+        <item>CANDAM</item>
+        <item>ALTO BORRALHA</item>
+        <item>VALE GRANDE</item>
+        <item>S MARTINHO</item>
+        <item>AGUADA CIMA (ESC)</item>
+        <item>AGUADA CIMA</item>
+        <item>FORCADA</item>
+        <item>POVOA VALE TRIGO</item>
+        <item>BELAZAIMA CHAO</item>
+        <item>FOLGAROSA (X)</item>
+        <item>AGADAO</item>
+        <item>GUISTOLA</item>
+        <item>ALMAS AREOSA</item>
+        <item>BORRALHA</item>
+        <item>MACOIDA</item>
+        <item>GIESTEIRA</item>
+        <item>RIO COVO</item>
+        <item>RIO COVO (X)</item>
+        <item>VALE DOMINGOS</item>
+        <item>S ROMAO - VAGOS</item>
+        <item>VERGAS SUL</item>
+        <item>PARADA CIMA</item>
+        <item>COVÃO DO LOBO (CRUZEIRO)</item>
+        <item>CASTA</item>
+        <item>JUNCAL</item>
+        <item>MOITA - VAGOS</item>
+        <item>RINES</item>
+        <item>GANDARA-VAGOS</item>
+        <item>ERVEDAL</item>
+        <item>VALE</item>
+        <item>GROU - VAGOS</item>
+        <item>PARDEIROS</item>
+        <item>CONDES</item>
+        <item>CANAS-Vagos</item>
+        <item>ANDAL</item>
+        <item>CARVALHAIS-VAGOS</item>
+        <item>CATIVES</item>
+        <item>CERQUEIRA</item>
+        <item>COVAL (X)</item>
+        <item>COVAL</item>
+        <item>MOUTA</item>
+        <item>SANFINS</item>
+        <item>SANFINS (X)</item>
+        <item>ROCAS VOUGA</item>
+        <item>NESPEREIRA BAIXO</item>
+        <item>VILA SECA</item>
+        <item>CRUZ PESO</item>
+        <item>SENHORINHA</item>
+        <item>MAMOA</item>
+        <item>PACO</item>
+        <item>PAÇÔ (CENTRO)</item>
+        <item>CEDRIM</item>
+        <item>PAREDES</item>
+        <item>IRIJO</item>
+        <item>COUTO ESTEVES</item>
+        <item>LOURIZELA</item>
+        <item>LAMEIRAS - S VOUGA</item>
+        <item>MOSQUEIRO</item>
+        <item>NOGUEIRA</item>
+        <item>MACIDA</item>
+        <item>PENOUÇOS (EN)</item>
+        <item>PARADELA (EST)</item>
+        <item>PONTE</item>
+        <item>BOTICA</item>
     </string-array>
 </resources>
