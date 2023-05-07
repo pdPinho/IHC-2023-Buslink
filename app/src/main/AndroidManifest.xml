@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".Horario_PT"
+            android:exported="false" />
+        <activity
             android:name=".Settings_EN"
             android:exported="false" />
         <activity
@@ -26,25 +29,25 @@
             android:exported="false" />
         <activity
             android:name=".Help_ES"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".AboutUS_ES"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Settings_PT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Help_PT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".AboutUS_PT"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Home_ES"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Home_EN"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Home_PT"
             android:exported="true">

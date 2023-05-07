@@ -67,6 +67,20 @@ public class Home_PT extends AppCompatActivity {
     }
 
 
+    // Horario button handler
+    public void verHorario(View view){
+        AutoCompleteTextView origin = (AutoCompleteTextView)findViewById(R.id.origin);
+        AutoCompleteTextView destination = (AutoCompleteTextView)findViewById(R.id.destination);
+
+        String originText = origin.getText().toString();
+        String destinationText = destination.getText().toString();
+
+        Intent intent = new Intent(this, Horario_PT.class);
+        intent.putExtra("origem", originText);
+        intent.putExtra("destino", destinationText);
+        startActivity(intent);
+    }
+
     // footer buttons section
     public void home(View view){
         Intent intent = new Intent(this, Home_PT.class);
