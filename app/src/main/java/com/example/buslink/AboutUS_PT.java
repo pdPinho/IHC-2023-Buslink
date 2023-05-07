@@ -44,12 +44,14 @@ public class AboutUS_PT extends AppCompatActivity {
         Intent intent = new Intent(this, Home_PT.class);
         startActivity(intent);
     }
-
+    public void about_us(View view){
+        Intent intent = new Intent(this, AboutUS_PT.class);
+        startActivity(intent);
+    }
     public void help(View view){
         Intent intent = new Intent(this, Help_PT.class);
         startActivity(intent);
     }
-
     public void settings(View view){
         Intent intent = new Intent(this, Settings_PT.class);
         startActivity(intent);

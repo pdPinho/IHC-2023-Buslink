@@ -43,18 +43,20 @@ public class Settings_EN extends AppCompatActivity {
 
 
     // footer buttons section
+    public void home(View view){
+        Intent intent = new Intent(this, Home_EN.class);
+        startActivity(intent);
+    }
     public void about_us(View view){
         Intent intent = new Intent(this, AboutUS_EN.class);
         startActivity(intent);
     }
-
     public void help(View view){
         Intent intent = new Intent(this, Help_EN.class);
         startActivity(intent);
     }
-
-    public void home(View view){
-        Intent intent = new Intent(this, Home_EN.class);
+    public void settings(View view){
+        Intent intent = new Intent(this, Settings_EN.class);
         startActivity(intent);
     }
 
