@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="help"
+    android:padding="10dp"
+    tools:context=".AboutUS_EN">
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:width="120dp"
+        android:height="55dp"
+        android:onClick="login"
+        android:text="Log in"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/company_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="300dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="Company logo"
+        android:maxWidth="120dp"
+        android:maxHeight="96dp"
+        android:onClick="home"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_no_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="410dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/table_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="43dp">
+
+            <TextView
+                android:id="@+id/home_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="home"
+                android:paddingHorizontal="10dp"
+                android:text="Home"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/about_us_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingHorizontal="10dp"
+                android:text="About us"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="10dp"
+                android:text="Help"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/definitions_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="settings"
+                android:paddingHorizontal="10dp"
+                android:text="Settings"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Language Selection -->
+
+    <TableLayout
+        android:id="@+id/table_select_language"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/select_pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="swap_language_pt">
+
+            <ImageView
+                android:id="@+id/select_pt_image"
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_pt" />
+
+            <TextView
+                android:id="@+id/select_pt_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Português"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/select_uk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hide_language_options">
+
+            <ImageView
+                android:id="@+id/select_image_uk"
+                android:layout_width="30dp"
+                android:layout_height="19dp"
+                app:srcCompat="@drawable/flag_uk" />
+
+            <TextView
+                android:id="@+id/select_uk_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/select_es"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="swap_language_es"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_es" />
+
+            <TextView
+                android:id="@+id/select_es_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Español"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:onClick="show_language_options"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_uk" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:width="350dp"
+        android:text="We are a software company that aggregates all bus schedules located in Portugal.
+        \n\nWe are committed to providing high quality service and meeting our customers' needs.
+        \n\nOur mission is to provide a fast, effective and reliable means of accessing bus schedules, as well as their delays and viewing their schedules offline."
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

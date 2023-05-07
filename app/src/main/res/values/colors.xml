@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#6C63FF</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="mainText">#2D313D</color>
+    <color name="textAlt">#8D8F97</color>
+
+    <color name="mainBackground">#ffffff</color>
+
+    <color name="colorPrimary_night">#6C63FF</color>
+    <color name="colorPrimaryDark_night">#2D313D</color>
+    <color name="colorAccent_night">#03DAC5</color>
+
+    <color name="mainText_night">#ffffff</color>
+    <color name="textAlt_night">#8D8F97</color>
+
+    <color name="mainBackground_night">#2D313D</color>
+    <color name="mainBackground_night_button">#444752</color>
+
 </resources>
+
+
+

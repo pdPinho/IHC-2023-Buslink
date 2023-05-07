@@ -1,7 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BusLink" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_night</item>
+        <item name="colorAccent">@color/colorAccent_night</item>
+
+        <item name="android:windowBackground">@color/mainBackground_night</item>
+        <item name="android:textColor">@color/mainText_night</item>
+        <item name="android:colorButtonNormal">@color/mainBackground_night_button</item>
     </style>
 </resources>

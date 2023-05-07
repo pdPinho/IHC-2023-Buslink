@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
-public class MainActivity extends AppCompatActivity {
+public class Home_PT extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home_pt);
 
         String[] stops = getResources().getStringArray(R.array.stops);
 
@@ -42,9 +42,44 @@ public class MainActivity extends AppCompatActivity {
         destination.setText(originText);
     }
 
-    // button login handler
-    public void login(View view){
-        Intent intent = new Intent(this, Iniciar_sessao.class);
+    // button swap language en
+    public void swap_language_en(View view){
+        Intent intent = new Intent(this, Home_EN.class);
+        startActivity(intent);
+    }
+
+    // button swap language es
+    public void swap_language_es(View view){
+        Intent intent = new Intent(this, Home_ES.class);
+        startActivity(intent);
+    }
+
+    // button show language options
+    public void show_language_options(View view){
+        findViewById(R.id.current_language).setVisibility(View.INVISIBLE);
+        findViewById(R.id.table_select_language).setVisibility(View.VISIBLE);
+    }
+
+    // button hide language options
+    public void hide_language_options(View view){
+        findViewById(R.id.current_language).setVisibility(View.VISIBLE);
+        findViewById(R.id.table_select_language).setVisibility(View.INVISIBLE);
+    }
+
+
+    // footer buttons section
+    public void about_us(View view){
+        Intent intent = new Intent(this, AboutUS_PT.class);
+        startActivity(intent);
+    }
+
+    public void help(View view){
+        Intent intent = new Intent(this, Help_PT.class);
+        startActivity(intent);
+    }
+
+    public void settings(View view){
+        Intent intent = new Intent(this, Settings_PT.class);
         startActivity(intent);
     }
 }

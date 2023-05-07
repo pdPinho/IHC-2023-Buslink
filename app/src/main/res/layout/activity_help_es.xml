@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Help_ES">
+
+    <ImageButton
+        android:id="@+id/company_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="300dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="Company logo"
+        android:maxWidth="120dp"
+        android:maxHeight="96dp"
+        android:onClick="home"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_no_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:width="120dp"
+        android:height="55dp"
+        android:onClick="login"
+        android:text="Iniciar Sesión"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="410dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/table_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="22dp">
+
+            <TextView
+                android:id="@+id/home_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="home"
+                android:paddingHorizontal="10dp"
+                android:text="Início"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/about_us_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="about_us"
+                android:paddingHorizontal="10dp"
+                android:text="Acerca de"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="10dp"
+                android:text="Ayuda"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/definitions_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="settings"
+                android:paddingHorizontal="10dp"
+                android:text="Definiciones"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Language Selection -->
+
+    <TableLayout
+        android:id="@+id/table_select_language"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/select_pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="swap_language_pt">
+
+            <ImageView
+                android:id="@+id/select_pt_image"
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_pt" />
+
+            <TextView
+                android:id="@+id/select_pt_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Português"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/select_uk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="swap_language_en">
+
+            <ImageView
+                android:id="@+id/select_image_uk"
+                android:layout_width="30dp"
+                android:layout_height="19dp"
+                app:srcCompat="@drawable/flag_uk" />
+
+            <TextView
+                android:id="@+id/select_uk_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/select_es"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="hide_language_options"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_es" />
+
+            <TextView
+                android:id="@+id/select_es_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Español"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:onClick="show_language_options"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_es" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="Español"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/Accordion"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/lost_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="lost_Pass"
+            android:text="Perdí el passe"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/lost_pass_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Si pierde su pase de autobús, comuníquese con la compañía que le vendió el pase y tenga:
+                             \n\n-Tarjeta de Ciudadano
+                             \n\n-Recibo
+                             \n\n-Número de proceso"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buy_pass_online"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="5dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:onClick="buy_Online"
+            android:text="¿Cómo compro pases en línea?"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/buy_pass_online_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para comprar y/o pagar su pase en línea, primero debe iniciar sesión en su cuenta.
+                                \n\n-Luego ve a 'Pases asociados'
+                                \n\n-Elija el pase deseado para renovar o agregar uno nuevo.
+                                \n\n-Seleccione 'Pagar pase' y elija el tipo de pago.
+                                \n\nLuego puede verificar cuánto tiempo es válido."
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="register_Account"
+            android:text="¿Ventajas de registrar una cuenta?"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/register_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Al registrarse en nuestra plataforma, tendrá la posibilidad de
+                \n\n-Ver horarios de autobuses y retrasos estimados
+                 \n\n-Vea y administre su(s) pase(s) en un solo lugar."
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="5dp"
+            android:onClick="contact"
+            android:text="¿Cómo ponerse en contacto?"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/contact_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para contactarnos:
+                              \n\n+351 234 999 002
+                              \n\nsupport@buslink.com"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
