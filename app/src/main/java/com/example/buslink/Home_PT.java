@@ -98,4 +98,9 @@ public class Home_PT extends AppCompatActivity {
         Intent intent = new Intent(this, Settings_PT.class);
         startActivity(intent);
     }
+
+    public void login(View view){
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
 }
