@@ -35,15 +35,19 @@ public class Register extends AppCompatActivity {
     }
 
     public void register(View view){
-        EditText name = (EditText) findViewById(R.id.name);
-        EditText email = (EditText) findViewById(R.id.email);
-        EditText password = (EditText) findViewById(R.id.password);
-        EditText confirm_password = (EditText) findViewById(R.id.confirm_password);
+        EditText name = findViewById(R.id.name);
+        String name_text = name.getText().toString();
+        EditText email = findViewById(R.id.email);
+        String email_text = email.getText().toString();
+        EditText password = findViewById(R.id.password);
+        String password_text = password.getText().toString();
+        EditText confirm_password = findViewById(R.id.confirm_password);
+        String confirm_password_text = confirm_password.getText().toString();
 
         Context context = this;
 
         AlertDialog.Builder alert_builder = new AlertDialog.Builder(context);
-        alert_builder.setMessage("É perciso preencher todos os campos");
+        alert_builder.setMessage("É necessário preencher todos os campos");
         alert_builder.setCancelable(true);
 
         alert_builder.setPositiveButton(
@@ -55,22 +59,25 @@ public class Register extends AppCompatActivity {
                             Intent intent = new Intent(Register.this, Login.class);
                             startActivity(intent);
                         }
-
                     }
                 });
 
         AlertDialog missing_alert = alert_builder.create();
 
-        if(name.getText().toString().isEmpty() || email.getText().toString().isEmpty() || password.getText().toString().isEmpty()){
+        if(name_text.isEmpty() || email_text.isEmpty() || password_text.isEmpty()){
             missing_alert.show();
-        } else if (!password.getText().toString().equals(confirm_password.getText().toString())) {
+        } /*else if (!email_text.contains("@") || !email_text.contains(".")) { // TODO make email verification more reliable (maybe with a lib?)
+            alert_builder.setMessage("Formato de email inválido");
+            AlertDialog email_alert = alert_builder.create();
+            email_alert.show();
+        }*/ else if (!password_text.equals(confirm_password_text)) {
             alert_builder.setMessage("As passwords teem de ser iguais");
             AlertDialog password_alert = alert_builder.create();
             password_alert.show();
         }
         else {
-            Register.passwords.put(email.getText().toString(), password.getText().toString());
-            Register.names.put(email.getText().toString(), name.getText().toString());
+            Register.passwords.put(email_text, password_text);
+            Register.names.put(email_text, name_text);
             complete = true;
             alert_builder.setMessage("Registro concluido!");
             AlertDialog complete_alert = alert_builder.create();

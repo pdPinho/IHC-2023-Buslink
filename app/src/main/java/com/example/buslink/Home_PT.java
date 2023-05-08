@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Home_PT extends AppCompatActivity {
 
@@ -28,6 +30,35 @@ public class Home_PT extends AppCompatActivity {
                 origin.showDropDown();
             }
         });*/
+
+        Button login_button = findViewById(R.id.login_button);
+        ImageButton profile_button = findViewById(R.id.profile);
+
+        if(!Login.logged_in.isEmpty()){
+            login_button.setVisibility(View.GONE);
+            profile_button.setVisibility(View.VISIBLE);
+        }
+        else{
+            login_button.setVisibility(View.VISIBLE);
+            profile_button.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        Button login_button = findViewById(R.id.login_button);
+        ImageButton profile_button = findViewById(R.id.profile);
+
+        if(!Login.logged_in.isEmpty()){
+            login_button.setVisibility(View.GONE);
+            profile_button.setVisibility(View.VISIBLE);
+        }
+        else{
+            login_button.setVisibility(View.VISIBLE);
+            profile_button.setVisibility(View.GONE);
+        }
     }
 
     // button swap handler (origin - destination)
@@ -101,6 +132,11 @@ public class Home_PT extends AppCompatActivity {
 
     public void login(View view){
         Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
+    public void profile(View view){
+        Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
 }

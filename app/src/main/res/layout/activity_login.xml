@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".Login">
 
     <ImageButton
@@ -75,7 +76,7 @@
         android:layout_marginBottom="5dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
-        android:imeOptions="actionSend"
+        android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -91,6 +92,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="150dp"
+        android:background="@drawable/button"
         android:onClick="login"
         android:text="@string/iniciar_sessao_text"
         android:textSize="20sp"

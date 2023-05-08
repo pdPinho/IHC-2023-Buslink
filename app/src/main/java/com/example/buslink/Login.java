@@ -12,6 +12,8 @@ import android.widget.EditText;
 
 public class Login extends AppCompatActivity {
 
+    public static String logged_in = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,10 +68,9 @@ public class Login extends AppCompatActivity {
             AlertDialog password_alert = alert_builder.create();
             password_alert.show();
         } else {
-            // TODO after login
-            // Intent intent = new Intent(this, SOMETHING.class);
-            // startActivity(intent);
-            return;
+            logged_in = email_text;
+            Intent intent = new Intent(this, Profile.class);
+            startActivity(intent);
         }
     }
 }

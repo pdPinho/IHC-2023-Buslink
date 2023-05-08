@@ -109,8 +109,26 @@
         android:text="@string/iniciar_sessao_text"
         android:textAllCaps="false"
         android:textSize="12sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:minWidth="48dp"
+        android:minHeight="36dp"
+        android:onClick="profile"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
 
     <TableLayout
         android:id="@+id/footer"
