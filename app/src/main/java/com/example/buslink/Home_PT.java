@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Home_PT extends AppCompatActivity {
 
@@ -28,6 +30,35 @@ public class Home_PT extends AppCompatActivity {
                 origin.showDropDown();
             }
         });*/
+
+        Button login_button = findViewById(R.id.login_button);
+        ImageButton profile_button = findViewById(R.id.profile);
+
+        if(!Login.logged_in.isEmpty()){
+            login_button.setVisibility(View.GONE);
+            profile_button.setVisibility(View.VISIBLE);
+        }
+        else{
+            login_button.setVisibility(View.VISIBLE);
+            profile_button.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        Button login_button = findViewById(R.id.login_button);
+        ImageButton profile_button = findViewById(R.id.profile);
+
+        if(!Login.logged_in.isEmpty()){
+            login_button.setVisibility(View.GONE);
+            profile_button.setVisibility(View.VISIBLE);
+        }
+        else{
+            login_button.setVisibility(View.VISIBLE);
+            profile_button.setVisibility(View.GONE);
+        }
     }
 
     // button swap handler (origin - destination)
@@ -67,19 +98,45 @@ public class Home_PT extends AppCompatActivity {
     }
 
 
+    // Horario button handler
+    public void verHorario(View view){
+        AutoCompleteTextView origin = (AutoCompleteTextView)findViewById(R.id.origin);
+        AutoCompleteTextView destination = (AutoCompleteTextView)findViewById(R.id.destination);
+
+        String originText = origin.getText().toString();
+        String destinationText = destination.getText().toString();
+
+        Intent intent = new Intent(this, Horario_PT.class);
+        intent.putExtra("origem", originText);
+        intent.putExtra("destino", destinationText);
+        startActivity(intent);
+    }
+
     // footer buttons section
+    public void home(View view){
+        Intent intent = new Intent(this, Home_PT.class);
+        startActivity(intent);
+    }
     public void about_us(View view){
         Intent intent = new Intent(this, AboutUS_PT.class);
         startActivity(intent);
     }
-
     public void help(View view){
         Intent intent = new Intent(this, Help_PT.class);
         startActivity(intent);
     }
-
     public void settings(View view){
         Intent intent = new Intent(this, Settings_PT.class);
+        startActivity(intent);
+    }
+
+    public void login(View view){
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
+    public void profile(View view){
+        Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
 }
