@@ -260,7 +260,7 @@
         android:text="Somos una empresa de software que agrega todos los horarios de autobuses ubicados en Portugal.
         \n\nEstamos comprometidos a brindar un servicio de alta calidad y satisfacer las necesidades de nuestros clientes.
         \n\nNuestra misión es proporcionar un medio rápido, eficaz y fiable para acceder a los horarios de los autobuses, así como a sus retrasos y ver sus horarios sin conexión."
-        android:textColor="#000000"
+        android:textColor = "?android:textColorPrimary"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

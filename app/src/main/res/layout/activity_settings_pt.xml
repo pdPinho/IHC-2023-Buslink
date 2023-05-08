@@ -265,6 +265,7 @@
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
             android:text="Tema Claro"
+            android:textColor = "?android:textColorPrimary"
             android:textSize="22sp" />
 
         <RadioButton
@@ -275,6 +276,7 @@
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
             android:text="Tema Escuro"
+            android:textColor = "?android:textColorPrimary"
             android:textSize="22sp" />
     </RadioGroup>
 

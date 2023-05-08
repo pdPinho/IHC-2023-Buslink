@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
@@ -15,6 +17,39 @@ public class Settings_ES extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_es);
+
+        boolean nightMode = isNightModeActive(getBaseContext());
+
+        if(nightMode) {
+            RadioButton radioItemDark = (RadioButton)findViewById(R.id.BlackTheme);
+            radioItemDark.setChecked(true);
+        }
+        else if(!nightMode){
+            RadioButton radioItemLight = (RadioButton)findViewById(R.id.WhiteTheme);
+            radioItemLight.setChecked(true);
+        }
+    }
+
+    public static boolean isNightModeActive(Context context) {
+        int defaultNightMode = AppCompatDelegate.getDefaultNightMode();
+        if (defaultNightMode == AppCompatDelegate.MODE_NIGHT_YES) {
+            return true;
+        }
+        if (defaultNightMode == AppCompatDelegate.MODE_NIGHT_NO) {
+            return false;
+        }
+
+        int currentNightMode = context.getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK;
+        switch (currentNightMode) {
+            case Configuration.UI_MODE_NIGHT_NO:
+                return false;
+            case Configuration.UI_MODE_NIGHT_YES:
+                return true;
+            case Configuration.UI_MODE_NIGHT_UNDEFINED:
+                return false;
+        }
+        return false;
     }
 
     // button swap language en

@@ -9,5 +9,8 @@
         <item name="android:windowBackground">@color/mainBackground_night</item>
         <item name="android:textColor">@color/mainText_night</item>
         <item name="android:colorButtonNormal">@color/mainBackground_night_button</item>
+        <item name="android:textColorPrimary">@color/mainText_night</item>
+        <item name="android:textColorHint">@color/textAlt_night</item>
+        <item name="android:buttonTint">@color/colorAccent_night</item>
     </style>
 </resources>

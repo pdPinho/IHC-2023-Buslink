@@ -258,7 +258,7 @@
         android:text="Somos uma empresa de software que agrega todos os horários de autocarros situados em Portugal.
         \n\nEstamos comprometidos em oferecer um serviço de alta qualidade e satisfazer as necessidades dos nossos clientes.
         \n\nA nossa missão é fornecer um meio rápido eficaz e fiável de acesso aos horários de autocarros, como também os seus atrasos e a visualização dos seus horários de modo offline."
-        android:textColor="#000000"
+        android:textColor = "?android:textColorPrimary"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
