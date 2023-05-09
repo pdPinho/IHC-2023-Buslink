@@ -13,6 +13,12 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".Horario_domingo_PT"
+            android:exported="false" />
+        <activity
+            android:name=".Horario_sabados_PT"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

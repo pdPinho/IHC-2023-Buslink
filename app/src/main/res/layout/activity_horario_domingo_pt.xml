@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Horario_PT">
+    tools:context=".Horario_domingo_PT">
 
     <ImageButton
         android:id="@+id/company_logo"
@@ -84,6 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="222dp"
         android:text="Dias úteis"
+        android:onClick="verHorarioDiasUteis"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,7 +107,6 @@
         android:layout_marginTop="222dp"
         android:layout_marginEnd="16dp"
         android:text="Domingos e Feriados"
-        android:onClick="verHorarioDomingo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -229,8 +229,7 @@
                 android:id="@+id/header_duracao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
+                android:clickable="false"
                 android:paddingHorizontal="10dp"
                 android:text="Duração"
                 android:textSize="20sp" />
@@ -259,7 +258,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="08:07"
+                android:text="09:47"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -269,7 +268,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="08:25"
+                android:text="10:05"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -277,8 +276,7 @@
                 android:id="@+id/duracao_l1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
+                android:clickable="false"
                 android:paddingHorizontal="15dp"
                 android:text="00:18"
                 android:textAlignment="center"
@@ -309,7 +307,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="08:42"
+                android:text="12:47"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -319,7 +317,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="09:05"
+                android:text="13:05"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -330,7 +328,7 @@
                 android:clickable="true"
                 android:onClick="help"
                 android:paddingHorizontal="15dp"
-                android:text="00:23"
+                android:text="00:18"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -359,7 +357,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="09:47"
+                android:text="14:47"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -369,7 +367,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="10:10"
+                android:text="15:05"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -377,8 +375,7 @@
                 android:id="@+id/duracao_l3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
+                android:clickable="false"
                 android:paddingHorizontal="15dp"
                 android:text="00:23"
                 android:textAlignment="center"
@@ -409,7 +406,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="10:47"
+                android:text="17:47"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -419,7 +416,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="11:10"
+                android:text="18:05"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -427,10 +424,9 @@
                 android:id="@+id/duracao_l4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
+                android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="00:23"
+                android:text="00:18"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -459,7 +455,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="11:47"
+                android:text="19:27"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -469,7 +465,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="12:10"
+                android:text="19:45"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
@@ -477,65 +473,14 @@
                 android:id="@+id/duracao_l5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
+                android:clickable="false"
                 android:paddingHorizontal="15dp"
-                android:text="00:23"
+                android:text="00:18"
                 android:textAlignment="center"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/custo_l5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:onClick="settings"
-                android:paddingHorizontal="15dp"
-                android:text="2,50€"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/table_horario_l6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="8dp">
-
-            <TextView
-                android:id="@+id/partida_l6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:paddingHorizontal="15dp"
-                android:text="12:47"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/chegada_l6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:paddingHorizontal="15dp"
-                android:text="13:10"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/duracao_l6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
-                android:paddingHorizontal="15dp"
-                android:text="00:23"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/custo_l6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="false"

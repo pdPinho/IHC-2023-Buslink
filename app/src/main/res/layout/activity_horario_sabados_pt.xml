@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Horario_PT">
+    tools:context=".Horario_sabados_PT">
 
     <ImageButton
         android:id="@+id/company_logo"
@@ -84,6 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="222dp"
         android:text="Dias úteis"
+        android:onClick="verHorarioDiasUteis"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -93,7 +94,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="222dp"
         android:text="Sábados"
-        android:onClick="verHorarioSabado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
@@ -297,56 +297,6 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/table_horario_l2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="8dp">
-
-            <TextView
-                android:id="@+id/partida_l2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:paddingHorizontal="15dp"
-                android:text="08:42"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/chegada_l2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:paddingHorizontal="15dp"
-                android:text="09:05"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/duracao_l2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
-                android:paddingHorizontal="15dp"
-                android:text="00:23"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/custo_l2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:onClick="settings"
-                android:paddingHorizontal="15dp"
-                android:text="2,50€"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-        </TableRow>
-
-        <TableRow
             android:id="@+id/table_horario_l3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -386,56 +336,6 @@
 
             <TextView
                 android:id="@+id/custo_l3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:onClick="settings"
-                android:paddingHorizontal="15dp"
-                android:text="2,50€"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/table_horario_l4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="8dp">
-
-            <TextView
-                android:id="@+id/partida_l4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:paddingHorizontal="15dp"
-                android:text="10:47"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/chegada_l4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:paddingHorizontal="15dp"
-                android:text="11:10"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/duracao_l4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:onClick="help"
-                android:paddingHorizontal="15dp"
-                android:text="00:23"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/custo_l4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="false"

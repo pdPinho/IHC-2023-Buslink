@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
-public class Horario_PT extends AppCompatActivity {
+public class Horario_sabados_PT extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_horario_pt2);
+        setContentView(R.layout.activity_horario_sabados_pt);
         setOrigemDestino();
     }
 
@@ -36,7 +36,6 @@ public class Horario_PT extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //TODO Obrigar a que estejam preenchidos antes de prosseguir xD
 
     // button swap handler (origin - destination)
     public void swap_locations(View view) {
@@ -52,14 +51,14 @@ public class Horario_PT extends AppCompatActivity {
 
 
     // Day filter buttons handler
-    public void verHorarioSabado(View view) {
-        TextView origin = (TextView) findViewById(R.id.origem_);
-        TextView destination = (TextView) findViewById(R.id.destino_);
+    public void verHorarioDiasUteis(View view){
+        TextView origin = (TextView)findViewById(R.id.origem_);
+        TextView destination = (TextView)findViewById(R.id.destino_);
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
 
-        Intent intent = new Intent(this, Horario_sabados_PT.class);
+        Intent intent = new Intent(this, Horario_PT.class);
         intent.putExtra("origem", originText);
         intent.putExtra("destino", destinationText);
         startActivity(intent);
