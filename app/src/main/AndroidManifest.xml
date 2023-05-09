@@ -13,6 +13,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
             android:name=".Horario_domingo_PT"
             android:exported="false" />
         <activity

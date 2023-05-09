@@ -5,109 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Home_PT">
+    tools:context=".Map">
 
-    <AutoCompleteTextView
-        android:id="@+id/destination"
+    <ImageView
+        android:id="@+id/backbutton"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="22dp"
-        android:height="48dp"
-        android:background="@drawable/edit_text_border"
-        android:completionThreshold="0"
-        android:hint="@string/para_onde_text"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:maxLines="1"
-        android:nextFocusForward="@id/horarios"
-        android:singleLine="true"
-        android:textAlignment="center"
-        android:textColor="?android:textColorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/horarios"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:onClick="home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <TextView
-        android:id="@+id/destino_text"
+        android:id="@+id/origin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="@string/destino_text"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/destination"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:scaleType="fitXY"
+        android:text="de onde?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/swap_locations_button2"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_max="130sp" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="para onde?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/swap_locations_button2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_max="130sp"/>
 
     <ImageButton
-        android:id="@+id/swap_locations_button"
-        android:layout_width="42dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button"
+        android:id="@+id/swap_locations_button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:contentDescription="swap locations button"
-        android:minWidth="48dp"
-        android:minHeight="36dp"
         android:onClick="swap_locations"
         android:rotation="90"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/destination"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/origin"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
         app:srcCompat="@drawable/_312655" />
 
-    <TextView
-        android:id="@+id/origem_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="@string/origem_text"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/origin"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/company_logo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginBottom="10dp"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="Company logo"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo_no_background"
-        app:layout_constraintBottom_toTopOf="@+id/origem_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <AutoCompleteTextView
-        android:id="@+id/origin"
+    <ImageView
+        android:id="@+id/map_original"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="22dp"
-        android:height="48dp"
-        android:background="@drawable/edit_text_border"
-        android:completionThreshold="0"
-        android:hint="@string/de_onde_text"
-        android:imeOptions="actionNext"
-        android:inputType="text"
-        android:maxLines="1"
-        android:nextFocusForward="@id/destination"
-        android:singleLine="true"
-        android:textAlignment="center"
-        android:textColor="?android:textColorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/destino_text"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_map_border"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHeight_percent="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/map_swap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_map_border"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/map_2" />
 
     <Button
         android:id="@+id/login_button"
@@ -346,71 +335,6 @@
         </TableRow>
 
     </TableLayout>
-
-    <Button
-        android:id="@+id/horarios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="30dp"
-        android:width="100dp"
-        android:background="@drawable/button"
-        android:onClick="verHorario"
-        android:text="Horários"
-        android:textAllCaps="false"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/map_button"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/proximos_autocarros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="30dp"
-        android:width="100dp"
-        android:background="@drawable/button"
-        android:text="Próximos Autocarros"
-        android:textAllCaps="false"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/map_button"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <RelativeLayout
-        android:id="@+id/map_button"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:onClick="map"
-        app:layout_constraintBottom_toTopOf="@+id/footer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginHorizontal="103dp"
-            android:layout_marginVertical="4dp"
-            android:background="@null"
-            android:onClick="map"
-            android:translationZ="90dp"
-            app:srcCompat="@drawable/maps_icon_8214" />
-
-        <Button
-            android:id="@+id/ver_mapa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:width="150dp"
-            android:background="@drawable/button"
-            android:onClick="map"
-            android:paddingHorizontal="20dp"
-            android:text="Ver no Mapa"
-            android:textAlignment="viewStart"
-            android:textAllCaps="false"
-            android:textSize="13sp" />
-
-    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

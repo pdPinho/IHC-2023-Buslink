@@ -139,4 +139,17 @@ public class Home_PT extends AppCompatActivity {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
+
+    public void map(View view){
+        AutoCompleteTextView origin = (AutoCompleteTextView)findViewById(R.id.origin);
+        AutoCompleteTextView destination = (AutoCompleteTextView)findViewById(R.id.destination);
+
+        String originText = origin.getText().toString();
+        String destinationText = destination.getText().toString();
+
+        Intent intent = new Intent(this, Map.class);
+        intent.putExtra("origem", originText);
+        intent.putExtra("destino", destinationText);
+        startActivity(intent);
+    }
 }
