@@ -4,18 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
-public class Horario_PT extends AppCompatActivity {
+import java.util.Calendar;
+import java.util.Date;
+
+public class Horario_atrasos_PT extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_horario_pt2);
+        setContentView(R.layout.activity_horario_atrasos_pt);
         setOrigemDestino();
+        getLastUpdateTime();
     }
 
     // Colocar a origem e destino corretos
@@ -30,6 +32,18 @@ public class Horario_PT extends AppCompatActivity {
         TextView destinationText = (TextView)findViewById(R.id.destino_);
         destinationText.setText(destino);
     }
+
+
+    //Show time of last update
+    public void getLastUpdateTime(){
+        Date currentTime = Calendar.getInstance().getTime();
+        String horasMinutos = currentTime.toString().substring(11,16);
+
+        TextView lastUpdate_text = (TextView)findViewById(R.id.last_updated);
+        String temp = "Ultima atualização: " + horasMinutos;
+        lastUpdate_text.setText(temp);
+    }
+
 
     //Login button handler
     public void login(View view){
@@ -50,33 +64,6 @@ public class Horario_PT extends AppCompatActivity {
 
         origin.setText(destinationText);
         destination.setText(originText);
-    }
-
-
-    // Day filter buttons handler
-    public void verHorarioSabado(View view) {
-        TextView origin = (TextView) findViewById(R.id.origem_);
-        TextView destination = (TextView) findViewById(R.id.destino_);
-
-        String originText = origin.getText().toString();
-        String destinationText = destination.getText().toString();
-
-        Intent intent = new Intent(this, Horario_sabados_PT.class);
-        intent.putExtra("origem", originText);
-        intent.putExtra("destino", destinationText);
-        startActivity(intent);
-    }
-    public void verHorarioDomingo(View view){
-        TextView origin = (TextView)findViewById(R.id.origem_);
-        TextView destination = (TextView)findViewById(R.id.destino_);
-
-        String originText = origin.getText().toString();
-        String destinationText = destination.getText().toString();
-
-        Intent intent = new Intent(this, Horario_domingo_PT.class);
-        intent.putExtra("origem", originText);
-        intent.putExtra("destino", destinationText);
-        startActivity(intent);
     }
 
 

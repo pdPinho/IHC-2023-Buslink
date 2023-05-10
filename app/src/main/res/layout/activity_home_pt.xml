@@ -374,6 +374,8 @@
         android:text="Próximos Autocarros"
         android:textAllCaps="false"
         android:textSize="13sp"
+        android:clickable="true"
+        android:onClick="verProximosAutocarros"
         app:layout_constraintBottom_toTopOf="@+id/map_button"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -130,8 +130,26 @@ public class Home_PT extends AppCompatActivity {
             intent.putExtra("destino", destinationText);
             startActivity(intent);
         }
-
     }
+
+    // Proximos Autocarros button handler
+    public void verProximosAutocarros(View view){
+        AutoCompleteTextView origin = (AutoCompleteTextView)findViewById(R.id.origin);
+        AutoCompleteTextView destination = (AutoCompleteTextView)findViewById(R.id.destination);
+
+        String originText = origin.getText().toString();
+        String destinationText = destination.getText().toString();
+        this.origin = originText;
+        this.destination = destinationText;
+
+        if (!originText.isEmpty() && !destinationText.isEmpty()) {
+            Intent intent = new Intent(this, Horario_atrasos_PT.class);
+            intent.putExtra("origem", originText);
+            intent.putExtra("destino", destinationText);
+            startActivity(intent);
+        }
+    }
+
 
     // footer buttons section
     public void home(View view){
