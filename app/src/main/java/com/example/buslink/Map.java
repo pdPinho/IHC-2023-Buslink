@@ -68,6 +68,8 @@ public class Map extends AppCompatActivity {
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
+        Home_PT.origin = destinationText;
+        Home_PT.destination = originText;
 
         origin.setText(destinationText);
         destination.setText(originText);

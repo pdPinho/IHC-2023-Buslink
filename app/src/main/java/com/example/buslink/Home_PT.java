@@ -2,16 +2,22 @@ package com.example.buslink;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Home_PT extends AppCompatActivity {
 
+    public static String origin = "";
+    public static String destination = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +48,16 @@ public class Home_PT extends AppCompatActivity {
             login_button.setVisibility(View.VISIBLE);
             profile_button.setVisibility(View.GONE);
         }
+
+        setOrigemDestino();
+    }
+
+    // Colocar a origem e destino corretos
+    public void setOrigemDestino(){
+        TextView originText = (TextView) findViewById(R.id.origin);
+        originText.setText(origin);
+        TextView destinationText = (TextView) findViewById(R.id.destination);
+        destinationText.setText(destination);
     }
 
     @Override
@@ -105,11 +121,16 @@ public class Home_PT extends AppCompatActivity {
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
+        this.origin = originText;
+        this.destination = destinationText;
 
-        Intent intent = new Intent(this, Horario_PT.class);
-        intent.putExtra("origem", originText);
-        intent.putExtra("destino", destinationText);
-        startActivity(intent);
+        if (!originText.isEmpty() && !destinationText.isEmpty()) {
+            Intent intent = new Intent(this, Horario_PT.class);
+            intent.putExtra("origem", originText);
+            intent.putExtra("destino", destinationText);
+            startActivity(intent);
+        }
+
     }
 
     // footer buttons section
@@ -146,10 +167,14 @@ public class Home_PT extends AppCompatActivity {
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
+        this.origin = originText;
+        this.destination = destinationText;
 
-        Intent intent = new Intent(this, Map.class);
-        intent.putExtra("origem", originText);
-        intent.putExtra("destino", destinationText);
-        startActivity(intent);
+        if (!originText.isEmpty() && !destinationText.isEmpty()) {
+            Intent intent = new Intent(this, Map.class);
+            intent.putExtra("origem", originText);
+            intent.putExtra("destino", destinationText);
+            startActivity(intent);
+        }
     }
 }

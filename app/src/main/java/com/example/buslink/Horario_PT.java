@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
@@ -45,6 +46,8 @@ public class Horario_PT extends AppCompatActivity {
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
+        Home_PT.origin = destinationText;
+        Home_PT.destination = originText;
 
         origin.setText(destinationText);
         destination.setText(originText);
