@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="home"
     android:padding="10dp"
     tools:context=".Map">
 
@@ -48,7 +49,7 @@
         app:layout_constraintStart_toEndOf="@+id/swap_locations_button2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintWidth_max="130sp"/>
+        app:layout_constraintWidth_max="130sp" />
 
     <ImageButton
         android:id="@+id/swap_locations_button2"
@@ -154,6 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:onClick="home"
                 android:paddingHorizontal="10dp"
                 android:text="Início"
                 android:textSize="18sp" />
