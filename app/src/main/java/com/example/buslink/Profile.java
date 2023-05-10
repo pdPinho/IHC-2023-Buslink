@@ -30,6 +30,11 @@ public class Profile extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void forgot(View view){
+        Intent intent = new Intent(this, ForgotPassword.class);
+        startActivity(intent);
+    }
+
     public void logout(View view){
         Login.logged_in = "";
         Intent intent = new Intent(this, Home_PT.class);
