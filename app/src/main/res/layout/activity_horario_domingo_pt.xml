@@ -106,6 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="222dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#44000000"
         android:text="Domingos e Feriados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

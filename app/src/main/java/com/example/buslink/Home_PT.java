@@ -14,16 +14,19 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 public class Home_PT extends AppCompatActivity {
 
     public static String origin = "";
     public static String destination = "";
+    private static String[] stops;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_pt);
 
-        String[] stops = getResources().getStringArray(R.array.stops);
+        stops = getResources().getStringArray(R.array.stops);
 
         AutoCompleteTextView origin = (AutoCompleteTextView) findViewById(R.id.origin);
         AutoCompleteTextView destination = (AutoCompleteTextView) findViewById(R.id.destination);
@@ -124,10 +127,12 @@ public class Home_PT extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText)) {
+
+
+        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
             Intent intent = new Intent(this, Horario_PT.class);
-            intent.putExtra("origem", originText);
-            intent.putExtra("destino", destinationText);
+            intent.putExtra("origem", originText.toUpperCase());
+            intent.putExtra("destino", destinationText.toUpperCase());
             startActivity(intent);
         }
     }
@@ -142,10 +147,10 @@ public class Home_PT extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText)) {
+        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
             Intent intent = new Intent(this, Horario_atrasos_PT.class);
-            intent.putExtra("origem", originText);
-            intent.putExtra("destino", destinationText);
+            intent.putExtra("origem", originText.toUpperCase());
+            intent.putExtra("destino", destinationText.toUpperCase());
             startActivity(intent);
         }
     }
@@ -188,10 +193,10 @@ public class Home_PT extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty()  && !(destinationText == originText)) {
+        if (!originText.isEmpty() && !destinationText.isEmpty()  && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
             Intent intent = new Intent(this, Map.class);
-            intent.putExtra("origem", originText);
-            intent.putExtra("destino", destinationText);
+            intent.putExtra("origem", originText.toUpperCase());
+            intent.putExtra("destino", destinationText.toUpperCase());
             startActivity(intent);
         }
     }

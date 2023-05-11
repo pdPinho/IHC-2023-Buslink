@@ -16,9 +16,9 @@
         android:contentDescription="Company logo"
         android:maxWidth="96dp"
         android:maxHeight="96dp"
+        android:onClick="home"
         android:scaleType="fitCenter"
         android:src="@drawable/logo_no_background"
-        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -83,8 +83,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="222dp"
-        android:text="Dias úteis"
         android:onClick="verHorarioDiasUteis"
+        android:text="Dias úteis"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -93,6 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="222dp"
+        android:backgroundTint="#44000000"
         android:text="Sábados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.374"
@@ -105,8 +106,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="222dp"
         android:layout_marginEnd="16dp"
-        android:text="Domingos e Feriados"
         android:onClick="verHorarioDomingo"
+        android:text="Domingos e Feriados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
