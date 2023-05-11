@@ -124,7 +124,7 @@ public class Home_PT extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty()) {
+        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText)) {
             Intent intent = new Intent(this, Horario_PT.class);
             intent.putExtra("origem", originText);
             intent.putExtra("destino", destinationText);
@@ -142,7 +142,7 @@ public class Home_PT extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty()) {
+        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText)) {
             Intent intent = new Intent(this, Horario_atrasos_PT.class);
             intent.putExtra("origem", originText);
             intent.putExtra("destino", destinationText);
@@ -188,7 +188,7 @@ public class Home_PT extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty()) {
+        if (!originText.isEmpty() && !destinationText.isEmpty()  && !(destinationText == originText)) {
             Intent intent = new Intent(this, Map.class);
             intent.putExtra("origem", originText);
             intent.putExtra("destino", destinationText);
