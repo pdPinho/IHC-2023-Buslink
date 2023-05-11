@@ -40,7 +40,8 @@ public class Horario_atrasos_PT extends AppCompatActivity {
         String horasMinutos = currentTime.toString().substring(11,16);
 
         TextView lastUpdate_text = (TextView)findViewById(R.id.last_updated);
-        String temp = "Ultima atualização: " + horasMinutos;
+        //String temp = "Ultima atualização: " + horasMinutos;
+        String temp = "Ultima atualização: 08:00";
         lastUpdate_text.setText(temp);
     }
 
