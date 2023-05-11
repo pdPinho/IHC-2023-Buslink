@@ -90,6 +90,7 @@
         android:layout_marginEnd="16dp"
         android:width="120dp"
         android:height="55dp"
+        android:background="@drawable/button"
         android:onClick="login"
         android:text="Iniciar Sesión"
         android:textAllCaps="false"
