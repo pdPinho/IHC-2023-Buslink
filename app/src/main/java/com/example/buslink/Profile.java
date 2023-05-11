@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -34,6 +37,7 @@ public class Profile extends AppCompatActivity {
 
     private static ArrayList<ConstraintSet> constraints = new ArrayList<>();
 
+    // TODO passes not be shared between accounts
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -140,9 +144,38 @@ public class Profile extends AppCompatActivity {
         EditText pass_email_view = (EditText) findViewById(R.id.pass_email);
         String pass_email = pass_email_view.getText().toString();
 
-        if(pass_number.isEmpty()){
+        if(pass_number.isEmpty() || pass_email.isEmpty()){
             return;
         }
+
+        Context context = this;
+        AlertDialog.Builder alert_builder = new AlertDialog.Builder(context);
+        alert_builder.setCancelable(true);
+
+        alert_builder.setPositiveButton(
+                "ok",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        if(!pass1_added && Login.logged_in.equals("georgesmith123@gmail.com")){
+            if(!pass_number.equals("123456789")){
+                alert_builder.setMessage("Não existe nenhum passe com esse número associado");
+                AlertDialog wrong_pass_number = alert_builder.create();
+                wrong_pass_number.show();
+                return;
+            }
+            if(!pass_email.equals("helensmith123@gmail.com")){
+                alert_builder.setMessage("Não existe nenhum passe com esse email associado");
+                AlertDialog wrong_pass_email = alert_builder.create();
+                wrong_pass_email.show();
+                return;
+            }
+        }
+
+
 
         if(pass1_text.isEmpty()){
             pass1_text = pass_number;

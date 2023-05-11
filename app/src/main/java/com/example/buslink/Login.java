@@ -18,6 +18,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Register.passwords.put("georgesmith123@gmail.com", "IHC2023");
+        Register.names.put("georgesmith123@gmail.com", "George Smith");
     }
 
     public void return_home(View view){
