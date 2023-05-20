@@ -5,19 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.opengl.Visibility;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class Help_PT extends AppCompatActivity {
+public class Help extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_help_pt);
+        setContentView(R.layout.activity_help);
 
         Button login_button = findViewById(R.id.login_button);
         ImageButton profile_button = findViewById(R.id.profile);
@@ -79,11 +78,11 @@ public class Help_PT extends AppCompatActivity {
         startActivity(intent);
     }
     public void help(View view){
-        Intent intent = new Intent(this, Help_PT.class);
+        Intent intent = new Intent(this, Help.class);
         startActivity(intent);
     }
     public void settings(View view){
-        Intent intent = new Intent(this, Settings_PT.class);
+        Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
 

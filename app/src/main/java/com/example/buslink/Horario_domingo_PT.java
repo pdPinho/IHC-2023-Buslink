@@ -86,11 +86,11 @@ public class Horario_domingo_PT extends AppCompatActivity {
         startActivity(intent);
     }
     public void help(View view){
-        Intent intent = new Intent(this, Help_PT.class);
+        Intent intent = new Intent(this, Help.class);
         startActivity(intent);
     }
     public void settings(View view){
-        Intent intent = new Intent(this, Settings_PT.class);
+        Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
 }

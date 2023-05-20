@@ -105,6 +105,14 @@
     <string name="about_us_text_es">Somos una empresa de software que agrega todos los horarios de autobuses ubicados en Portugal.         \n\nEstamos comprometidos a brindar un servicio de alta calidad y satisfacer las necesidades de nuestros clientes.         \n\nNuestra misión es proporcionar un medio rápido, eficaz y fiable para acceder a los horarios de los autobuses, así como a sus retrasos y ver sus horarios sin conexión.</string>
     <string name="about_us_text_en">We are a software company that aggregates all bus schedules located in Portugal.         \n\nWe are committed to providing high quality service and meeting our customers\' needs.         \n\nOur mission is to provide a fast, effective and reliable means of accessing bus schedules, as well as their delays and viewing their schedules offline.</string>
 
+    <string name="dark_pt">Tema escuro</string>
+    <string name="dark_es">Tema oscuro</string>
+    <string name="dark_en">Dark theme</string>
+
+    <string name="light_pt">Tema claro</string>
+    <string name="light_es">Tema de luz</string>
+    <string name="light_en">Light theme</string>
+
     <string-array name="stops">
         <item>AVEIRO (ISCAA)</item>
         <item>AVEIRO (TERMINAL RODOVIÁRIO)</item>

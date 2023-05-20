@@ -133,11 +133,10 @@
 
     <TableLayout
         android:id="@+id/footer"
-        android:layout_width="410dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="-5dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
@@ -145,8 +144,8 @@
 
         <TableRow
             android:id="@+id/table_options"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:paddingHorizontal="29dp">
 
             <TextView
@@ -154,8 +153,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:onClick="home"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Início"
                 android:textSize="18sp" />
 
@@ -171,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="about_us"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Sobre nós"
                 android:textSize="18sp" />
 
@@ -187,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="help"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Ajuda"
                 android:textSize="18sp" />
 
@@ -204,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="settings"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Definições"
                 android:textSize="18sp" />
         </TableRow>
@@ -225,7 +223,7 @@
             android:id="@+id/select_pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="hide_language_options">
+            android:onClick="swap_language_pt">
 
             <ImageView
                 android:id="@+id/select_pt_image"
@@ -298,7 +296,7 @@
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/current_language"
+        android:id="@+id/current_language_pt"
         android:layout_width="51dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -314,7 +312,6 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="34dp"
-                android:onClick="show_language_options"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/flag_pt" />
@@ -328,8 +325,87 @@
 
             <TextView
                 android:id="@+id/language_pt"
-                android:onClick="show_language_options"
                 android:text="Português"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_en"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_uk" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_es"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_es" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="Español"
+                android:textAlignment="center"
                 android:textSize="11sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/language_select" />
