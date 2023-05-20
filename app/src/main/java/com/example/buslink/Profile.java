@@ -50,7 +50,7 @@ public class Profile extends AppCompatActivity {
     }
 
     public void return_home(View view){
-        Intent intent = new Intent(this, Home_PT.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
@@ -61,7 +61,7 @@ public class Profile extends AppCompatActivity {
 
     public void logout(View view){
         Login.logged_in = "";
-        Intent intent = new Intent(this, Home_PT.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 

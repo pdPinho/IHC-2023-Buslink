@@ -31,25 +31,42 @@
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
         android:width="120dp"
         android:height="55dp"
         android:background="@drawable/button"
         android:onClick="login"
-        android:text="@string/iniciar_sessao_text"
+        android:text="@string/log_in_pt"
         android:textAllCaps="false"
-        android:textSize="12sp"
+        android:textSize="15sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:onClick="profile"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
+
+
     <TableLayout
         android:id="@+id/footer"
-        android:layout_width="410dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="-5dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
@@ -57,8 +74,8 @@
 
         <TableRow
             android:id="@+id/table_options"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:paddingHorizontal="29dp">
 
             <TextView
@@ -66,8 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:onClick="home"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Início"
                 android:textSize="18sp" />
 
@@ -83,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="about_us"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Sobre nós"
                 android:textSize="18sp" />
 
@@ -99,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="help"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Ajuda"
                 android:textSize="18sp" />
 
@@ -116,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="settings"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Definições"
                 android:textSize="18sp" />
         </TableRow>
@@ -137,7 +153,7 @@
             android:id="@+id/select_pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="hide_language_options">
+            android:onClick="swap_language_pt">
 
             <ImageView
                 android:id="@+id/select_pt_image"
@@ -210,11 +226,11 @@
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/current_language"
+        android:id="@+id/current_language_pt"
         android:layout_width="51dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="29dp"
         android:onClick="show_language_options"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -226,7 +242,6 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="34dp"
-                android:onClick="show_language_options"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/flag_pt" />
@@ -240,8 +255,87 @@
 
             <TextView
                 android:id="@+id/language_pt"
-                android:onClick="show_language_options"
                 android:text="Português"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_en"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_uk" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_es"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_es" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="Español"
+                android:textAlignment="center"
                 android:textSize="11sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/language_select" />
@@ -276,12 +370,10 @@
             android:visibility="gone">
 
             <TextView
+                android:id="@+id/actual_lost_pass_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No caso de perda do passe de autocarro, pedimos que entre em contacto com a companhia que lhe vendeu o passe e que tenha em mão:
-                             \n\n-Cartão Cidadão
-                             \n\n-Recibo
-                             \n\n-Número de processo"
+                android:text="@string/lost_pass_text_pt"
                 android:textSize="14sp"
                 android:visibility="visible" />
         </LinearLayout>
@@ -307,6 +399,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/actual_buy_pass_online_text"
                 android:text="Para comprar e/ou pagar o seu passe online, primeiro necessita de iniciar sessão na sua conta.
                                 \n\n-De seguida aceda 'Passes Associados'
                                 \n\n-Escolha o passe desejado para renovar ou adicione um novo.
@@ -333,6 +426,7 @@
             android:visibility="gone">
 
             <TextView
+                android:id="@+id/actual_register_account_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ao registar-se na nossa plataforma terá nas suas mãos a possibilidade de
@@ -359,6 +453,7 @@
             android:visibility="gone">
 
             <TextView
+                android:id="@+id/actual_contact_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Para nos contactar:

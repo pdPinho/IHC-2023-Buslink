@@ -1,10 +1,109 @@
 <resources>
     <string name="app_name">BusLink</string>
-    <string name="origem_text">Origem:</string>
-    <string name="destino_text">Destino:</string>
-    <string name="de_onde_text">de onde?</string>
-    <string name="para_onde_text">para onde?</string>
-    <string name="iniciar_sessao_text">Iniciar sessão</string>
+
+    <string name="from_pt">Origem:</string>
+    <string name="from_es">De:</string>
+    <string name="from_en">From:</string>
+
+    <string name="to_pt">Destino:</string>
+    <string name="to_es">A:</string>
+    <string name="to_en">To:</string>
+
+    <string name="from_where_pt">De onde?</string>
+    <string name="from_where_es">¿De donde?</string>
+    <string name="from_where_en">From where?</string>
+
+    <string name="to_where_pt">Para onde?</string>
+    <string name="to_where_es">¿A donde?</string>
+    <string name="to_where_en">From where?</string>
+
+    <string name="log_in_pt">Iniciar sessão</string>
+    <string name="log_in_es">Iniciar sesión</string>
+    <string name="log_in_en">Sign in</string>
+
+    <string name="register_pt">Registar-se</string>
+    <string name="register_es">Registro</string>
+    <string name="register_en">Register</string>
+
+    <string name="timetable_pt">Horários</string>
+    <string name="timetable_es">Horarios</string>
+    <string name="timetable_en">Timetables</string>
+
+    <string name="nextbus_pt">Próximos autocarros</string>
+    <string name="nextbus_es">Próximos autobuses</string>
+    <string name="nextbus_en">Next buses</string>
+
+    <string name="map_pt">Ver no mapa</string>
+    <string name="map_es">Ver en mapa</string>
+    <string name="map_en">View on map</string>
+
+    <string name="home_pt">Início</string>
+    <string name="home_es">Inicio</string>
+    <string name="home_en">Home</string>
+
+    <string name="about_us_pt">Sobre nós</string>
+    <string name="about_us_es">Sobre nos</string>
+    <string name="about_us_en">About us</string>
+
+    <string name="help_pt">Ajuda</string>
+    <string name="help_es">Ayuda</string>
+    <string name="help_en">Help</string>
+
+    <string name="settings_pt">Definições</string>
+    <string name="settings_es">Ajustes</string>
+    <string name="settings_en">Settings</string>
+
+    <string name="or_pt">OU</string>
+    <string name="or_es">O</string>
+    <string name="or_en">OR</string>
+
+    <string name="forgot_pt">Esqueci-me da password</string>
+    <string name="forgot_es">Olvidé mi contraseña</string>
+    <string name="forgot_en">Forgot my password</string>
+
+    <string name="name_pt">Nome</string>
+    <string name="name_es">Nombre</string>
+    <string name="name_en">Name</string>
+
+    <string name="confirm_password_pt">Confirmar Password</string>
+    <string name="confirm_password_es">Confirmar Password</string>
+    <string name="confirm_password_en">Confirm Password</string>
+
+    <string name="get_in_contact_pt">Como entrar em contacto?</string>
+    <string name="get_in_contact_es">¿Cómo ponerse en contacto?</string>
+    <string name="get_in_contact_en">How to get in touch?</string>
+
+    <string name="get_in_contact_text_pt">Para nos contactar: \n\n+351 234 999 002 \n\nsupport@buslink.com"</string>
+    <string name="get_in_contact_text_es">Para contactarnos: \n\n+351 234 999 002 \n\nsupport@buslink.com"</string>
+    <string name="get_in_contact_text_en">To contact us: \n\n+351 234 999 002 \n\nsupport@buslink.com</string>
+
+    <string name="register_benefits_pt">Vantagens de registar conta?</string>
+    <string name="register_benefits_es">¿Ventajas de registrar una cuenta?</string>
+    <string name="register_benefits_en">Advantages of registering an account?</string>
+
+    <string name="register_benefits_text_pt">Ao registar-se na nossa plataforma terá nas suas mãos a possibilidade de \n\n-Ver os horários dos autocarros e respetivos atrasos estimados \n\n-Ver e gerir o(s) seu(s) passe(s) num só local.</string>
+    <string name="register_benefits_text_es">Al registrarse en nuestra plataforma, tendrá la posibilidad de \n\n-Ver horarios de autobuses y retrasos estimados \n\n-Vea y administre su(s) pase(s) en un solo lugar.</string>
+    <string name="register_benefits_text_en">By registering on our platform, you will have the possibility to \n\n-See bus timetables and estimated delays \n\n-View and manage your pass(s) in one place.</string>
+
+    <string name="buy_pass_pt">Como compro passe online?</string>
+    <string name="buy_pass_es">¿Cómo compro pases en línea?</string>
+    <string name="buy_pass_en">How do I buy passes online?</string>
+
+    <string name="buy_pass_text_pt">Para comprar e/ou pagar o seu passe online, primeiro necessita de iniciar sessão na sua conta. \n\n-De seguida aceda \'Passes Associados\' \n\n-Escolha o passe desejado para renovar ou adicione um novo. \n\n-Selecione \'Pagar passe\' e escolha o tipo de pagamento. \n\nDe seguida poderá verificar até quando é válido.</string>
+    <string name="buy_pass_text_es">Para comprar y/o pagar su pase en línea, primero debe iniciar sesión en su cuenta. \n\n-Luego ve a \'Pases asociados\' \n\n-Elija el pase deseado para renovar o agregar uno nuevo. \n\n-Seleccione \'Pagar pase\' y elija el tipo de pago. \n\nLuego puede verificar cuánto tiempo es válido.</string>
+    <string name="buy_pass_text_en">To buy and/or pay for your pass online, you first need to log in to your account. \n\n-Then go to \'Associated Passes\' \n\n-Choose the desired pass to renew or add a new one. \n\n-Select \'Pay pass\' and choose the type of payment. \n\nThen you can check how long it is valid.</string>
+
+    <string name="lost_pass_pt">Perdi o passe do autocarro</string>
+    <string name="lost_pass_es">Perdí el passe</string>
+    <string name="lost_pass_en">I lost my buss pass</string>
+
+    <string name="lost_pass_text_pt">No caso de perda do passe de autocarro, pedimos que entre em contacto com a companhia que lhe vendeu o passe e que tenha em mão: \n\n-Cartão Cidadão \n\n-Recibo \n\n-Número de processo</string>
+    <string name="lost_pass_text_es">Si pierde su pase de autobús, comuníquese con la compañía que le vendió el pase y tenga:  \n\n-Tarjeta de Ciudadano  \n\n-Recibo  \n\n-Número de proceso</string>
+    <string name="lost_pass_text_en">If you lose your bus pass, please contact the company that sold you the pass and have: \n\n-Citizen Card \n\n-Receipt \n\n-Process number</string>
+
+    <string name="about_us_text_pt">Somos uma empresa de software que agrega todos os horários de autocarros situados em Portugal.         \n\nEstamos comprometidos em oferecer um serviço de alta qualidade e satisfazer as necessidades dos nossos clientes.         \n\nA nossa missão é fornecer um meio rápido eficaz e fiável de acesso aos horários de autocarros, como também os seus atrasos e a visualização dos seus horários de modo offline.</string>
+    <string name="about_us_text_es">Somos una empresa de software que agrega todos los horarios de autobuses ubicados en Portugal.         \n\nEstamos comprometidos a brindar un servicio de alta calidad y satisfacer las necesidades de nuestros clientes.         \n\nNuestra misión es proporcionar un medio rápido, eficaz y fiable para acceder a los horarios de los autobuses, así como a sus retrasos y ver sus horarios sin conexión.</string>
+    <string name="about_us_text_en">We are a software company that aggregates all bus schedules located in Portugal.         \n\nWe are committed to providing high quality service and meeting our customers\' needs.         \n\nOur mission is to provide a fast, effective and reliable means of accessing bus schedules, as well as their delays and viewing their schedules offline.</string>
 
     <string-array name="stops">
         <item>AVEIRO (ISCAA)</item>

@@ -4,24 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="help"
     android:padding="10dp"
-    tools:context=".AboutUS_ES">
+    tools:context=".AboutUs">
 
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
         android:width="120dp"
         android:height="55dp"
         android:background="@drawable/button"
         android:onClick="login"
-        android:text="Iniciar Sesión"
+        android:text="@string/log_in_pt"
         android:textAllCaps="false"
+        android:textSize="15sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:onClick="profile"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
 
     <ImageButton
         android:id="@+id/company_logo"
@@ -38,18 +55,17 @@
         android:src="@drawable/logo_no_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintVertical_bias="0.514" />
 
     <TableLayout
         android:id="@+id/footer"
-        android:layout_width="410dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="-5dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
@@ -57,17 +73,16 @@
 
         <TableRow
             android:id="@+id/table_options"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingHorizontal="22dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29dp">
 
             <TextView
                 android:id="@+id/home_option"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:onClick="home"
-                android:paddingHorizontal="10dp"
+                android:paddingHorizontal="5dp"
                 android:text="Início"
                 android:textSize="18sp" />
 
@@ -83,8 +98,8 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="about_us"
-                android:paddingHorizontal="10dp"
-                android:text="Acerca de"
+                android:paddingHorizontal="5dp"
+                android:text="Sobre nós"
                 android:textSize="18sp" />
 
             <TextView
@@ -99,8 +114,8 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="help"
-                android:paddingHorizontal="10dp"
-                android:text="Ayuda"
+                android:paddingHorizontal="5dp"
+                android:text="Ajuda"
                 android:textSize="18sp" />
 
             <TextView
@@ -116,15 +131,13 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="settings"
-                android:paddingHorizontal="10dp"
-                android:text="Definiciones"
+                android:paddingHorizontal="5dp"
+                android:text="Definições"
                 android:textSize="18sp" />
         </TableRow>
 
     </TableLayout>
 
-
-    <!-- Language Selection -->
 
     <TableLayout
         android:id="@+id/table_select_language"
@@ -189,7 +202,7 @@
             android:id="@+id/select_es"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="hide_language_options"
+            android:onClick="swap_language_es"
             android:paddingVertical="5dp">
 
             <ImageView
@@ -213,11 +226,11 @@
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/current_language"
+        android:id="@+id/current_language_pt"
         android:layout_width="51dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="29dp"
         android:onClick="show_language_options"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -227,9 +240,87 @@
             android:layout_height="34dp">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="25dp"
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/language_pt"
+                android:text="Português"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_en"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_uk" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
                 android:onClick="show_language_options"
+                android:text="English"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_es"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="34dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/flag_es" />
@@ -253,18 +344,16 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/about_us_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_marginTop="60dp"
         android:width="350dp"
-        android:text="Somos una empresa de software que agrega todos los horarios de autobuses ubicados en Portugal.
-        \n\nEstamos comprometidos a brindar un servicio de alta calidad y satisfacer las necesidades de nuestros clientes.
-        \n\nNuestra misión es proporcionar un medio rápido, eficaz y fiable para acceder a los horarios de los autobuses, así como a sus retrasos y ver sus horarios sin conexión."
-        android:textColor = "?android:textColorPrimary"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/about_us_text_pt"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

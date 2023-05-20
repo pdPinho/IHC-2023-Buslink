@@ -36,7 +36,7 @@
         android:width="120dp"
         android:height="55dp"
         android:background="@drawable/button"
-        android:text="@string/iniciar_sessao_text"
+        android:text="@string/log_in_pt"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"

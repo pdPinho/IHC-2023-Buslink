@@ -5,31 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Home_EN">
+    tools:context=".Home">
 
-    <!-- Origin and Destination Section -->
+
+    <AutoCompleteTextView
+        android:id="@+id/origin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="22dp"
+        android:height="48dp"
+        android:background="@drawable/edit_text_border"
+        android:completionThreshold="0"
+        android:hint="@string/from_where_pt"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:nextFocusForward="@id/destination"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/destino_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <AutoCompleteTextView
         android:id="@+id/destination"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="436dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/_22sdp"
         android:height="48dp"
+        android:background="@drawable/edit_text_border"
         android:completionThreshold="0"
-        android:hint="Where to?"
+        android:hint="@string/to_where_pt"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:nextFocusForward="@id/horarios"
+        android:singleLine="true"
         android:textAlignment="center"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/horarios"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/destino_text"
-        android:layout_width="74dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="24dp"
-        android:text="To:"
+        android:text="@string/to_pt"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/destination"
@@ -38,10 +69,9 @@
     <ImageButton
         android:id="@+id/swap_locations_button"
         android:layout_width="42dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="36dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
         android:contentDescription="swap locations button"
         android:minWidth="48dp"
         android:minHeight="36dp"
@@ -51,79 +81,76 @@
         app:layout_constraintBottom_toTopOf="@+id/destination"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/origin"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/_312655" />
 
     <TextView
         android:id="@+id/origem_text"
-        android:layout_width="83dp"
-        android:layout_height="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="24dp"
-        android:text="From:"
+        android:text="@string/from_pt"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/origin"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <AutoCompleteTextView
-        android:id="@+id/origin"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="328dp"
-        android:height="48dp"
-        android:completionThreshold="0"
-        android:hint="Where from?"
-        android:textAlignment="center"
+    <ImageButton
+        android:id="@+id/company_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="Company logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_no_background"
+        app:layout_constraintBottom_toTopOf="@+id/origem_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHeight_percent="20"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Login, Logo and footer Section -->
 
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="26dp"
         android:width="120dp"
         android:height="55dp"
         android:background="@drawable/button"
         android:onClick="login"
-        android:text="Log in"
+        android:text="@string/log_in_pt"
         android:textAllCaps="false"
+        android:textSize="15sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/company_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="400dp"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="Company logo"
-        android:maxWidth="96dp"
-        android:maxHeight="96dp"
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:onClick="profile"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo_no_background"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
-
+        app:srcCompat="@drawable/user_icon" />
 
     <TableLayout
         android:id="@+id/footer"
-        android:layout_width="410dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="-5dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
@@ -131,17 +158,17 @@
 
         <TableRow
             android:id="@+id/table_options"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingHorizontal="43dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29dp">
 
             <TextView
                 android:id="@+id/home_option"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:paddingHorizontal="10dp"
-                android:text="Home"
+                android:paddingHorizontal="5dp"
+                android:text="Início"
                 android:textSize="18sp" />
 
             <TextView
@@ -156,8 +183,8 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="about_us"
-                android:paddingHorizontal="10dp"
-                android:text="About us"
+                android:paddingHorizontal="5dp"
+                android:text="Sobre nós"
                 android:textSize="18sp" />
 
             <TextView
@@ -172,8 +199,8 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="help"
-                android:paddingHorizontal="10dp"
-                android:text="Help"
+                android:paddingHorizontal="5dp"
+                android:text="Ajuda"
                 android:textSize="18sp" />
 
             <TextView
@@ -189,14 +216,12 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:onClick="settings"
-                android:paddingHorizontal="10dp"
-                android:text="Settings"
+                android:paddingHorizontal="5dp"
+                android:text="Definições"
                 android:textSize="18sp" />
         </TableRow>
 
     </TableLayout>
-
-    <!-- Language Selection -->
 
     <TableLayout
         android:id="@+id/table_select_language"
@@ -237,7 +262,7 @@
             android:id="@+id/select_uk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="hide_language_options">
+            android:onClick="swap_language_en">
 
             <ImageView
                 android:id="@+id/select_image_uk"
@@ -285,11 +310,11 @@
     </TableLayout>
 
     <TableLayout
-        android:id="@+id/current_language"
+        android:id="@+id/current_language_pt"
         android:layout_width="51dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="29dp"
         android:onClick="show_language_options"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -299,9 +324,47 @@
             android:layout_height="34dp">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="25dp"
-                android:onClick="show_language_options"
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_pt" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/language_pt"
+                android:text="Português"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/current_language_en"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="34dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/flag_uk" />
@@ -324,45 +387,86 @@
 
     </TableLayout>
 
-    <!-- Timetable Section -->
+    <TableLayout
+        android:id="@+id/current_language_es"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:onClick="show_language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="48dp"
+            android:layout_height="34dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flag_es" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="show_language_options"
+                android:text="Español"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/language_select" />
+        </TableRow>
+
+    </TableLayout>
 
     <Button
         android:id="@+id/horarios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
         android:width="100dp"
-        android:background="#C6C6C6"
-        android:text="Timetables"
+        android:background="@drawable/button"
+        android:onClick="verHorario"
+        android:text="@string/timetable_pt"
         android:textAllCaps="false"
-        android:textColor="#000000"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destination" />
+        app:layout_constraintBottom_toTopOf="@+id/map_button"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/proximos_autocarros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:width="100dp"
-        android:background="#C6C6C6"
-        android:text="Next Buses"
+        android:background="@drawable/button"
+        android:text="@string/nextbus_pt"
         android:textAllCaps="false"
-        android:textColor="#000000"
         android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destination" />
+        android:clickable="true"
+        android:onClick="verProximosAutocarros"
+        app:layout_constraintBottom_toTopOf="@+id/map_button"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/map_button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="map"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destination">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -371,6 +475,7 @@
             android:layout_marginHorizontal="103dp"
             android:layout_marginVertical="4dp"
             android:background="@null"
+            android:onClick="map"
             android:translationZ="90dp"
             app:srcCompat="@drawable/maps_icon_8214" />
 
@@ -379,14 +484,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:width="150dp"
-            android:background="#C6C6C6"
+            android:background="@drawable/button"
+            android:onClick="map"
             android:paddingHorizontal="20dp"
-            android:text="View on Map"
+            android:text="@string/map_pt"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
-            android:textColor="#000000"
             android:textSize="13sp" />
 
     </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

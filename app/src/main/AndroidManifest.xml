@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
         <activity
             android:name=".Horario_atrasos_PT"
             android:exported="false" />
@@ -20,7 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".LoadingScreen"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,16 +55,10 @@
             android:name=".Help_EN"
             android:exported="false" />
         <activity
-            android:name=".AboutUS_EN"
-            android:exported="false" />
-        <activity
             android:name=".Settings_ES"
             android:exported="false" />
         <activity
             android:name=".Help_ES"
-            android:exported="false" />
-        <activity
-            android:name=".AboutUS_ES"
             android:exported="false" />
         <activity
             android:name=".Settings_PT"
@@ -66,18 +66,6 @@
         <activity
             android:name=".Help_PT"
             android:exported="false" />
-        <activity
-            android:name=".AboutUS_PT"
-            android:exported="false" />
-        <activity
-            android:name=".Home_ES"
-            android:exported="false" />
-        <activity
-            android:name=".Home_EN"
-            android:exported="false" />
-        <activity
-            android:name=".Home_PT"
-            android:exported="false"></activity>
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />

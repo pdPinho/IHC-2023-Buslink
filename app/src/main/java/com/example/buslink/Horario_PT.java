@@ -45,8 +45,8 @@ public class Horario_PT extends AppCompatActivity {
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
-        Home_PT.origin = destinationText;
-        Home_PT.destination = originText;
+        Home.origin = destinationText;
+        Home.destination = originText;
 
         origin.setText(destinationText);
         destination.setText(originText);
@@ -82,11 +82,11 @@ public class Horario_PT extends AppCompatActivity {
 
     // footer buttons section
     public void home(View view){
-        Intent intent = new Intent(this, Home_PT.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
     public void about_us(View view){
-        Intent intent = new Intent(this, AboutUS_PT.class);
+        Intent intent = new Intent(this, AboutUs.class);
         startActivity(intent);
     }
     public void help(View view){

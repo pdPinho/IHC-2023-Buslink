@@ -107,7 +107,7 @@
         android:height="55dp"
         android:background="@drawable/button"
         android:onClick="login"
-        android:text="@string/iniciar_sessao_text"
+        android:text="@string/log_in_pt"
         android:textAllCaps="false"
         android:textSize="15sp"
         android:visibility="visible"

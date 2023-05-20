@@ -79,11 +79,11 @@ public class Settings_ES extends AppCompatActivity {
 
     // footer buttons section
     public void home(View view){
-        Intent intent = new Intent(this, Home_ES.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
     public void about_us(View view){
-        Intent intent = new Intent(this, AboutUS_ES.class);
+        Intent intent = new Intent(this, AboutUs.class);
         startActivity(intent);
     }
     public void help(View view){

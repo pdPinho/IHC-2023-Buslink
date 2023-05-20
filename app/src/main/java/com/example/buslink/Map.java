@@ -33,13 +33,13 @@ public class Map extends AppCompatActivity {
 
     // button swap language en
     public void swap_language_en(View view){
-        Intent intent = new Intent(this, Home_EN.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
     // button swap language es
     public void swap_language_es(View view){
-        Intent intent = new Intent(this, Home_ES.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
@@ -68,8 +68,8 @@ public class Map extends AppCompatActivity {
 
         String originText = origin.getText().toString();
         String destinationText = destination.getText().toString();
-        Home_PT.origin = destinationText;
-        Home_PT.destination = originText;
+        Home.origin = destinationText;
+        Home.destination = originText;
 
         origin.setText(destinationText);
         destination.setText(originText);
@@ -89,11 +89,11 @@ public class Map extends AppCompatActivity {
 
     // footer buttons section
     public void home(View view){
-        Intent intent = new Intent(this, Home_PT.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
     public void about_us(View view){
-        Intent intent = new Intent(this, AboutUS_PT.class);
+        Intent intent = new Intent(this, AboutUs.class);
         startActivity(intent);
     }
     public void help(View view){

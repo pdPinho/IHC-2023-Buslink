@@ -15,7 +15,7 @@ public class ForgotPassword extends AppCompatActivity {
     }
 
     public void return_home(View view){
-        Intent intent = new Intent(this, Home_PT.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 }

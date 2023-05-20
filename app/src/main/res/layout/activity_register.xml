@@ -31,7 +31,7 @@
         android:layout_marginEnd="@dimen/_10sdp"
         android:background="@drawable/button"
         android:onClick="login"
-        android:text="@string/iniciar_sessao_text"
+        android:text="@string/log_in_pt"
         android:textSize="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.08"
@@ -184,5 +184,84 @@
             app:layout_constraintHeight_percent="0.05" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/table_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29dp">
+
+            <TextView
+                android:id="@+id/home_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingHorizontal="5dp"
+                android:text="Início"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/about_us_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="about_us"
+                android:paddingHorizontal="5dp"
+                android:text="Sobre nós"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="5dp"
+                android:text="Ajuda"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/definitions_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="settings"
+                android:paddingHorizontal="5dp"
+                android:text="Definições"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

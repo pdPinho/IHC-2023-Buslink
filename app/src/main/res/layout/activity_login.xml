@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <ImageButton
+        android:id="@+id/company_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="Company logo"
+        android:maxWidth="96dp"
+        android:maxHeight="96dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_no_background"
+        android:onClick="return_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -17,23 +37,35 @@
         app:layout_constraintWidth_percent="0.8"
         >
 
-        <ImageButton
-            android:id="@+id/logo"
+        <Button
+            android:id="@+id/register_new"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:adjustViewBounds="true"
-            android:background="@android:color/transparent"
-            android:contentDescription="Company logo"
-            android:onClick="return_home"
-            android:scaleType="fitCenter"
-            android:src="@drawable/logo_no_background"
-            app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/button"
+            android:onClick="register"
+            android:text="Registar-se"
+            android:textSize="@dimen/_15sdp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHeight_percent="0.4" />
+            app:layout_constraintBottom_toTopOf="@id/or_text" />
+
+        <TextView
+            android:id="@+id/or_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="OU"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/email_text" />
+
 
         <TextView
             android:id="@+id/email_text"
@@ -96,7 +128,7 @@
             android:layout_marginEnd="0dp"
             android:background="@drawable/button"
             android:onClick="login"
-            android:text="@string/iniciar_sessao_text"
+            android:text="@string/log_in_pt"
             android:textSize="@dimen/_15sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.1"
@@ -109,7 +141,7 @@
             android:layout_height="0dp"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHeight_percent="0.15" />
+            app:layout_constraintHeight_percent="0.2" />
 
         <TextView
             android:id="@+id/forgot_password"
@@ -120,24 +152,90 @@
             android:onClick="forgot_password"
             android:text="Esqueci-me da password"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/login"
             app:layout_constraintWidth_percent="0.6"
             android:textSize="@dimen/_13sdp"/>
 
-        <TextView
-            android:id="@+id/register"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/table_options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:gravity="right"
-            android:linksClickable="true"
-            android:maxLines="1"
-            android:onClick="register"
-            android:text="Registar-se"
-            android:textSize="@dimen/_13sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login"
-            app:layout_constraintWidth_percent="0.4" />
+            android:paddingHorizontal="29dp">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/home_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingHorizontal="5dp"
+                android:onClick="home"
+                android:text="Início"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/about_us_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="about_us"
+                android:paddingHorizontal="5dp"
+                android:text="Sobre nós"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="5dp"
+                android:text="Ajuda"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/definitions_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="settings"
+                android:paddingHorizontal="5dp"
+                android:text="Definições"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

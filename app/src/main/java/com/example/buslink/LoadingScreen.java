@@ -22,7 +22,7 @@ public class LoadingScreen extends AppCompatActivity {
 
                 } finally {
                     Intent i = new Intent(LoadingScreen.this,
-                            Home_PT.class);
+                            Home.class);
                     startActivity(i);
                     finish();
                 }
