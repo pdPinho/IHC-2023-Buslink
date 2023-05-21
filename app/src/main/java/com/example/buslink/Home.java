@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Home extends AppCompatActivity {
 
@@ -273,10 +275,10 @@ public class Home extends AppCompatActivity {
 
 
 
-        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
+        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText.equals(originText)) && containsStop(Arrays.asList(stops), originText) && containsStop(Arrays.asList(stops), destinationText)) {
             Intent intent = new Intent(this, Timetables.class);
-            intent.putExtra("origem", originText.toUpperCase());
-            intent.putExtra("destino", destinationText.toUpperCase());
+            intent.putExtra("origem", originText);
+            intent.putExtra("destino", destinationText);
             startActivity(intent);
         }
     }
@@ -291,12 +293,21 @@ public class Home extends AppCompatActivity {
         this.origin = originText;
         this.destination = destinationText;
 
-        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
+        if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText.equals(originText)) && containsStop(Arrays.asList(stops), originText) && containsStop(Arrays.asList(stops), destinationText)) {
             Intent intent = new Intent(this, Delays.class);
-            intent.putExtra("origem", originText.toUpperCase());
-            intent.putExtra("destino", destinationText.toUpperCase());
+            intent.putExtra("origem", originText);
+            intent.putExtra("destino", destinationText);
             startActivity(intent);
         }
+    }
+
+    private boolean containsStop(List<String> stops, String stop){
+        for(String s : stops){
+            if(s.equalsIgnoreCase(stop)){
+                return true;
+            }
+        }
+        return false;
     }
 
 
