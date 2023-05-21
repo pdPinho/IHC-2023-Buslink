@@ -274,7 +274,7 @@ public class Home extends AppCompatActivity {
 
 
         if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
-            Intent intent = new Intent(this, Horario_PT.class);
+            Intent intent = new Intent(this, Timetables.class);
             intent.putExtra("origem", originText.toUpperCase());
             intent.putExtra("destino", destinationText.toUpperCase());
             startActivity(intent);
@@ -292,7 +292,7 @@ public class Home extends AppCompatActivity {
         this.destination = destinationText;
 
         if (!originText.isEmpty() && !destinationText.isEmpty() && !(destinationText == originText) && Arrays.asList(stops).contains(originText.toUpperCase()) && Arrays.asList(stops).contains(destinationText.toUpperCase())) {
-            Intent intent = new Intent(this, Horario_atrasos_PT.class);
+            Intent intent = new Intent(this, Delays.class);
             intent.putExtra("origem", originText.toUpperCase());
             intent.putExtra("destino", destinationText.toUpperCase());
             startActivity(intent);

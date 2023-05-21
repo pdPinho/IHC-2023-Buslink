@@ -113,6 +113,38 @@
     <string name="light_es">Tema de luz</string>
     <string name="light_en">Light theme</string>
 
+    <string name="business_days_pt">Dias úteis</string>
+    <string name="business_days_es">Dias habiles</string>
+    <string name="business_days_en">Business days</string>
+
+    <string name="saturdays_pt">Sábados</string>
+    <string name="saturdays_es">Sábados</string>
+    <string name="saturdays_en">Saturdays</string>
+
+    <string name="sundays_pt">Domingos e feriados</string>
+    <string name="sundays_es">Domingos y festivos</string>
+    <string name="sundays_en">Sundays and holidays</string>
+
+    <string name="departure_pt">Partida</string>
+    <string name="departure_es">Partida</string>
+    <string name="departure_en">Departure</string>
+
+    <string name="arrival_pt">Chegada</string>
+    <string name="arrival_es">Llegada</string>
+    <string name="arrival_en">Arrival</string>
+
+    <string name="duration_pt">Duração</string>
+    <string name="duration_es">Duración</string>
+    <string name="duration_en">Duration</string>
+
+    <string name="cost_pt">Custo</string>
+    <string name="cost_es">Precio</string>
+    <string name="cost_en">Cost</string>
+
+    <string name="last_update_pt">Última atualização:</string>
+    <string name="last_update_es">Última actualización:</string>
+    <string name="last_update_en">Last update:</string>
+
     <string-array name="stops">
         <item>AVEIRO (ISCAA)</item>
         <item>AVEIRO (TERMINAL RODOVIÁRIO)</item>

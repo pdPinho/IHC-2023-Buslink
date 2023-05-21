@@ -154,6 +154,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:paddingHorizontal="5dp"
+                android:onClick="home"
                 android:text="Início"
                 android:textSize="18sp" />
 

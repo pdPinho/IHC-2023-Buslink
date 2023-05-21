@@ -82,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:onClick="home"
                 android:paddingHorizontal="5dp"
                 android:text="Início"
                 android:textSize="18sp" />

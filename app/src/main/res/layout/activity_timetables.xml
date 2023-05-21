@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#44000000"
+    tools:context=".Timetables">
+
+    <ImageButton
+        android:id="@+id/company_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="Company logo"
+        android:maxWidth="96dp"
+        android:maxHeight="96dp"
+        android:onClick="home"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_no_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        android:width="120dp"
+        android:height="55dp"
+        android:background="@drawable/button"
+        android:onClick="login"
+        android:text="@string/log_in_pt"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="38dp"
+        android:background="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:onClick="profile"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/origem_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:maxLines="4"
+        android:text="de onde?"
+        app:layout_constraintEnd_toStartOf="@+id/swap_locations_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/swap_locations_button"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="140dp"
+        android:contentDescription="swap locations button"
+        android:minWidth="48dp"
+        android:minHeight="36dp"
+        android:onClick="swap_locations"
+        android:rotation="90"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_312655" />
+
+    <TextView
+        android:id="@+id/destino_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:maxLines="4"
+        android:text="para onde?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/swap_locations_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dias_uteis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="222dp"
+        android:onClick="verHorarioDiasUteis"
+        android:background="@drawable/button_darker"
+        android:text="Dias úteis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sabados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="222dp"
+        android:background="@drawable/button"
+        android:onClick="verHorarioSabado"
+        android:text="Sábados"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintStart_toEndOf="@id/dias_uteis"
+        app:layout_constraintEnd_toStartOf="@id/domingos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/domingos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button"
+        android:onClick="verHorarioDomingo"
+        android:text="Domingos e Feriados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/table_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="29dp">
+
+            <TextView
+                android:id="@+id/home_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingHorizontal="5dp"
+                android:onClick="home"
+                android:text="Início"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/about_us_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="about_us"
+                android:paddingHorizontal="5dp"
+                android:text="Sobre nós"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="5dp"
+                android:text="Ajuda"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="|"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/definitions_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="settings"
+                android:paddingHorizontal="5dp"
+                android:text="Definições"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tabela_dias_uteis"
+        android:layout_width="410dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/partida_dias_uteis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Partida"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/chegada_dias_uteis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Chegada"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/duracao_dias_uteis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="Duração"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/custo_dias_uteis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="10dp"
+                android:text="Custo"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="08:07"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="08:25"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="00:18"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="08:42"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="09:05"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="09:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="10:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="10:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="11:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="11:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="12:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="12:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="13:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tabela_sabados"
+        android:layout_width="410dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/partida_sabados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Partida"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/chegada_sabados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Chegada"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/duracao_sabados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="10dp"
+                android:text="Duração"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/custo_sabados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="10dp"
+                android:text="Custo"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="08:07"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="08:25"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="15dp"
+                android:text="00:18"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="09:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="10:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="11:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="12:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="12:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="13:10"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tabela_domingos"
+        android:layout_width="410dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/partida_domingos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Partida"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/chegada_domingos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Chegada"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/duracao_domingos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="10dp"
+                android:text="Duração"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/custo_domingos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="10dp"
+                android:text="Custo"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="09:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="10:05"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="00:18"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="12:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="13:05"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="help"
+                android:paddingHorizontal="15dp"
+                android:text="00:18"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="14:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="15:05"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="00:23"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="17:47"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="18:05"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="00:18"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="19:27"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="19:45"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingHorizontal="15dp"
+                android:text="00:18"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:onClick="settings"
+                android:paddingHorizontal="15dp"
+                android:text="2,50€"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
