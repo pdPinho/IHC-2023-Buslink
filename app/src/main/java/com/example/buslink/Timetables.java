@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 public class Timetables extends AppCompatActivity {
 
     @Override
@@ -184,6 +186,9 @@ public class Timetables extends AppCompatActivity {
         Button login_button = (Button) findViewById(R.id.login_button);
         login_button.setText(getResources().getString(R.string.log_in_en));
 
+        Button delays = (Button) findViewById(R.id.delays);
+        delays.setText(getResources().getString(R.string.nextbus_en));
+
         Button dias_uteis = (Button) findViewById(R.id.dias_uteis);
         dias_uteis.setText(getResources().getString(R.string.business_days_en));
 
@@ -241,6 +246,9 @@ public class Timetables extends AppCompatActivity {
 
         Button login_button = (Button) findViewById(R.id.login_button);
         login_button.setText(getResources().getString(R.string.log_in_es));
+
+        Button delays = (Button) findViewById(R.id.delays);
+        delays.setText(getResources().getString(R.string.nextbus_es));
 
         Button dias_uteis = (Button) findViewById(R.id.dias_uteis);
         dias_uteis.setText(getResources().getString(R.string.business_days_es));
@@ -300,6 +308,9 @@ public class Timetables extends AppCompatActivity {
         Button login_button = (Button) findViewById(R.id.login_button);
         login_button.setText(getResources().getString(R.string.log_in_pt));
 
+        Button delays = (Button) findViewById(R.id.delays);
+        delays.setText(getResources().getString(R.string.nextbus_pt));
+
         Button dias_uteis = (Button) findViewById(R.id.dias_uteis);
         dias_uteis.setText(getResources().getString(R.string.business_days_pt));
 
@@ -348,6 +359,20 @@ public class Timetables extends AppCompatActivity {
 
         TextView definitions_option = (TextView) findViewById(R.id.definitions_option);
         definitions_option.setText(getResources().getString(R.string.settings_pt));
+
+    }
+
+    public void verProximosAutocarros(View view){
+        TextView origin = (TextView)findViewById(R.id.origem_);
+        TextView destination = (TextView)findViewById(R.id.destino_);
+
+        String originText = origin.getText().toString();
+        String destinationText = destination.getText().toString();
+
+        Intent intent = new Intent(this, Delays.class);
+        intent.putExtra("origem", originText);
+        intent.putExtra("destino", destinationText);
+        startActivity(intent);
 
     }
 }
