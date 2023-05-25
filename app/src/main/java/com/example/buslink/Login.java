@@ -22,8 +22,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Register.passwords.put("georgesmith123@gmail.com", "IHC2023");
-        Register.names.put("georgesmith123@gmail.com", "George Smith");
+        Register.passwords.put("gsmith@gmail.com", "123");
+        Register.names.put("gsmith@gmail.com", "George Smith");
 
         if(Home.currentLanguage.equals("pt")){
             swap_language_pt(findViewById(android.R.id.content));

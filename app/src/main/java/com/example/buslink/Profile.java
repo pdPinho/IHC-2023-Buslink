@@ -160,14 +160,14 @@ public class Profile extends AppCompatActivity {
                     }
                 });
 
-        if(!pass1_added && Login.logged_in.equals("georgesmith123@gmail.com")){
+        if(!pass1_added && Login.logged_in.equals("gsmith@gmail.com")){
             if(!pass_number.equals("123456789")){
                 alert_builder.setMessage("Não existe nenhum passe com esse número associado");
                 AlertDialog wrong_pass_number = alert_builder.create();
                 wrong_pass_number.show();
                 return;
             }
-            if(!pass_email.equals("helensmith123@gmail.com")){
+            if(!pass_email.equals("hsmith@gmail.com")){
                 alert_builder.setMessage("Não existe nenhum passe com esse email associado");
                 AlertDialog wrong_pass_email = alert_builder.create();
                 wrong_pass_email.show();
